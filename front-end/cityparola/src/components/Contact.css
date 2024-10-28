@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .contact-box {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s ease;
+    width: 50%;
+    height: auto;
+  }
+  
+  .contact-box.light {
+    background-color: rgba(238, 238, 238, 0.8);
+  }
+  
+  .contact-box.dark {
+    background-color: rgba(68, 68, 68, 0.8);
+  }
+  
+  .contact-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .contact-content {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: #12a8f3;
+  }
