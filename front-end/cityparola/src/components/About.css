@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .about-box {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s ease;
+    width: 50%;
+    height: auto;
+  }
+  
+  .about-box.light {
+    background-color: rgba(238, 238, 238, 0.8);
+  }
+  
+  .about-box.dark {
+    background-color: rgba(68, 68, 68, 0.8);
+  }
+  
+  .about-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .about-content {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
