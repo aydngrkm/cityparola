@@ -5,6 +5,8 @@ from api import views
 urlpatterns = [
     path('users/', views.UserList.as_view()),
     path('users/<int:pk>/', views.UserDetail.as_view()),
+    path('countries/', views.CountryList.as_view()),
+    path('countries/<int:pk>/', views.CountryDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

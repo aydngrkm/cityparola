@@ -8,6 +8,8 @@ from .models import (
 )
 
 class UserSerializer(serializers.ModelSerializer):
+    score = serializers.IntegerField(default=0)
+
     class Meta:
         model = User
         fields = ['id', 'username', 'email', 'password', 'score']
