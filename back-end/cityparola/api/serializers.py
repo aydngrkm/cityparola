@@ -8,7 +8,7 @@ from .models import (
 )
 
 class UserSerializer(serializers.ModelSerializer):
-    score = serializers.IntegerField(default=0)
+    score = serializers.IntegerField(min_value=0, default=0)
 
     class Meta:
         model = User
