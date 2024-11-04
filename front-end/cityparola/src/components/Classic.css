@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.back-button {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    margin-top: 20px;
+    left: 30px;
+}
+
+.title {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.title.dark-mode {
+    color: #eee;
+}
+
+.classic-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+}
+
+.txt {
+    font-size: 24px;
+    color: #333;
+}
+
+.txt.dark-mode {
+    color: #eee;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+.timer-logo {
+    width: 35px;
+    height: auto;
+}
+
+.question-container {
+    padding: 70px 300px;
+    margin: 10px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.right-section {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4vw;
+    margin-top: 25vw;
+}
+
+.score-container, .combo-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.91);
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.input-region {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30vw;
+}
+
+.input {
+    width: 40vw;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.pass-button {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    width: 100px;
+    padding: 6px;
+    background-color: rgba(255, 204, 0, 0.54);
+    border-radius: 30px;
+    margin-block-end: auto;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.pass-text {
+    color: #ffffff;
+    opacity: 0.91;
+}
+
+.pass-button:hover .pass-text {
+    color: #000000;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: red;
+    font-weight: bold;
+}

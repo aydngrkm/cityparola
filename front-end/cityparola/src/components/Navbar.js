@@ -21,10 +21,8 @@ const Navbar = ({ darkMode }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [isSidebarOpen]);
 
-  
-
   return (
-    <nav className={darkMode ? 'navbar dark' : 'navbar'}>
+    <nav className={`navbar ${darkMode ? 'dark' : ''}`}>
       <Link to="/" className="logo-link">
         <img src={logo} alt="Logo" className="logo" />
       </Link>
