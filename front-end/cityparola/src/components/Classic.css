@@ -13,6 +13,10 @@ html, body {
     left: 30px;
 }
 
+.back-button.dark-mode {
+    filter: invert(1);
+}
+
 .title {
     display: flex;
     padding-top: 10px;
@@ -53,6 +57,10 @@ html, body {
     height: auto;
 }
 
+.timer-logo.dark-mode {
+    filter: invert(1);
+}
+
 .question-container {
     padding: 70px 300px;
     margin: 10px;
@@ -82,7 +90,7 @@ html, body {
     font-size: 24px;
 }
 
-.input-region {
+.input-container {
     position: relative;
     display: inline-block;
     justify-content: center;
@@ -92,7 +100,8 @@ html, body {
 
 .input {
     width: 40vw;
-    padding: 10px;
+    padding: 12px;
+    padding-left: 20px;
     font-size: 16px;
     margin-bottom: 10px;
     border-radius: 30px;
@@ -104,7 +113,7 @@ html, body {
     top: 5px;
     right: 6px;
     width: 100px;
-    padding: 6px;
+    padding: 8px;
     background-color: rgba(255, 204, 0, 0.54);
     border-radius: 30px;
     margin-block-end: auto;
@@ -116,18 +125,29 @@ html, body {
 .pass-text {
     color: #ffffff;
     opacity: 0.91;
+    margin: 1px 2px 0 0;
 }
 
 .pass-button:hover .pass-text {
     color: #000000;
 }
 
+.game-over-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    width: 100vw;
+}
+
 .game-over {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 36px;
-    color: red;
+    color: #333;
     font-weight: bold;
+}
+
+.game-over.dark-mode {
+    color: #ffffff;
 }

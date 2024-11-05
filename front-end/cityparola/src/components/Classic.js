@@ -11,7 +11,7 @@ const Classic = ({ darkMode }) => {
     const [combo, setCombo] = useState(0);
     const [isGameOver, setIsGameOver] = useState(false);
     const [inputValue, setInputValue] = useState("");
-    const [showModal, setShowModal] = useState(false); // Modal durumunu izlemek için
+    const [showModal, setShowModal] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -51,60 +51,69 @@ const Classic = ({ darkMode }) => {
 
     const handleBackClick = (event) => {
         event.preventDefault();
-        setShowModal(true); // Modalı göster
+        setShowModal(true);
     };
 
     const handleConfirmExit = () => {
         setShowModal(false);
-        navigate("/"); // Anasayfaya yönlendir
+        navigate("/");
     };
 
     const handleCancelExit = () => {
-        setShowModal(false); // Modalı kapat
+        setShowModal(false);
     };
 
     return (
         <>
             <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'></link>
             <a href="/" onClick={handleBackClick} className='back-button-img'>
-                <img src={backbtn} alt='bckbtn' className='back-button'></img>
+                <img src={backbtn} alt='bckbtn' className={`back-button ${darkMode ? 'dark-mode' : ''}`} />
             </a>
             <div className={`title ${darkMode ? 'dark-mode' : ''}`}>City Parolla</div>
-            <div className='classic-container'>
-                <div className={`timer txt ${darkMode ? 'dark-mode' : ''}`}>
-                    <span>
-                        <img src={timerlogo} alt='timer-logo' className='timer-logo'></img>
-                    </span>
-                    <span>{writeTime(timer)}</span>
-                </div>
-                <div className={`question-container txt ${darkMode ? 'dark-mode' : ''}`}>
-                    Question A askjfgbsndajfbahf bnslfgakgbfljcnas gvasbskdlashgafsbndlkas asofdhasfha asofhasuoıfdhasouf asuohf oashg
-                </div>
-                <div className='right-section'>
-                    <div className='score-container'>
-                        Score: {score}
+            
+            {!isGameOver && (
+                <div className={`classic-container ${darkMode ? 'dark-mode' : ''}`}>
+                    <div className={`timer txt ${darkMode ? 'dark-mode' : ''}`}>
+                        <span>
+                            <img src={timerlogo} alt='timer-logo' className={`timer-logo ${darkMode ? 'dark-mode' : ''}`} />
+                        </span>
+                        <span>{writeTime(timer)}</span>
                     </div>
-                    <div className='combo-container'>
-                        Combo: x{combo}
+                    <div className={`question-container txt ${darkMode ? 'dark-mode' : ''}`}>
+                        Question A: <br /><br />
+                        The city where a bullet was fired into the sun
+                    </div>
+                    <div className='right-section'>
+                        <div className='score-container'>
+                            Score: {score}
+                        </div>
+                        <div className='combo-container'>
+                            Combo: x{combo}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className='input-region'>
-                <div className='input-text'>
-                    <input
-                        type='text'
-                        value={inputValue}
-                        placeholder='Your answer here'
-                        className='input'
-                        onChange={handleInputChange}
-                        onKeyDown={handleKeyDown}
-                    ></input>
-                    <button className='pass-button' onClick={handleSubmit}>
-                        <div className='pass-text'>PASS</div>
-                    </button>
+            )}
+
+            {!isGameOver && (
+                <div className='input-container'>
+                    <div className='input-text'>
+                        <input
+                            type='text'
+                            value={inputValue}
+                            placeholder='Your answer here'
+                            className='input'
+                            onChange={handleInputChange}
+                            onKeyDown={handleKeyDown}
+                        />
+                        <button className='pass-button' onClick={handleSubmit}>
+                            <div className='pass-text'>PASS</div>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            {isGameOver && <div className='game-over'>Game Over</div>}
+            )}
+            {isGameOver && <div className='game-over-container'>
+                <div className={`game-over ${darkMode ? 'dark-mode' : ''}`}>Game Over<br/>Your Score Is: {score}</div>
+            </div>}
             {showModal && (
                 <Modal
                     message="Are you sure you want to leave? Your test will not be counted."
@@ -114,6 +123,7 @@ const Classic = ({ darkMode }) => {
             )}
         </>
     );
+    
 };
 
 export default Classic;
