@@ -11,6 +11,11 @@ urlpatterns = [
     path('users/<int:pk>/', views.UserDetail.as_view()),
     path('countries/', views.CountryList.as_view()),
     path('countries/<int:pk>/', views.CountryDetail.as_view()),
+    path('cities/', views.CityList.as_view()),
+    path('cities/<int:pk>', views.CityDetail.as_view()),
+    path('questions/', views.QuestionList.as_view()),
+    path('questions/<int:pk>', views.QuestionDetail.as_view()),
+    path('default-test/', views.DefaultTestView.as_view(), name='default-test'),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
