@@ -50,3 +50,7 @@ html, body {
   a:hover {
     color: #12a8f3;
   }
+
+  a:not(:hover) {
+    transition: color 0.9s ease;
+  }

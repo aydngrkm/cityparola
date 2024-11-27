@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Modal from './Modal';
-import './Classic.css';
+import './Survival.css';
 import backbtn from '../assets/back_button.png';
 import timerlogo from '../assets/timer.png';
 
-const Classic = ({ darkMode }) => {
+const Survival = ({ darkMode }) => {
     const [timer, setTimer] = useState(300);
     const [score, setScore] = useState(0);
     const [combo, setCombo] = useState(0);
     const [isGameOver, setIsGameOver] = useState(false);
     const [inputValue, setInputValue] = useState("");
     const [showModal, setShowModal] = useState(false);
+    const [showForfeit, setShowForfeit] = useState(false);
     const [animationClass, setAnimationClass] = useState("");
     const navigate = useNavigate();
 
@@ -45,27 +46,35 @@ const Classic = ({ darkMode }) => {
             setAnimationClass("correct");
             setScore((prevScore) => prevScore + (10 * (combo + 1)));
             setCombo((prevCombo) => prevCombo + 1);
-        } 
-        else if (answer !== "") {
+            setTimer((prevTimer) => prevTimer + 5);
+        } else {
             setAnimationClass("wrong");
             setCombo(0);
         }
-        setTimeout(() => setAnimationClass(""), 800);
+        setTimeout(() => setAnimationClass(""), 1000);
         setInputValue("");
     };
     
-    const handlePass = () => {
-        setAnimationClass("pass");
-        setTimeout(() => setAnimationClass(""), 800);
-        setCombo(0);
-        setInputValue("");
-    };
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             handleSubmit();
         }
     };
+
+    const handleForfeitClick = (event) => {
+        event.preventDefault();
+        setShowForfeit(true);
+    }
+
+    const handleConfirmForfeit = () => {
+        setIsGameOver(true);
+        setShowForfeit(false);
+    }
+
+    const handleCancelForfeit = () => {
+        setShowForfeit(false);
+    }
 
     const handleBackClick = (event) => {
         event.preventDefault();
@@ -103,7 +112,7 @@ const Classic = ({ darkMode }) => {
             <div className={`title ${darkMode ? 'dark-mode' : ''}`}>City Parolla</div>
             
             {!isGameOver && (
-                <div className={`classic-container ${darkMode ? 'dark-mode' : ''}`}>
+                <div className={`survival-container ${darkMode ? 'dark-mode' : ''}`}>
                     <div className={`timer txt ${darkMode ? 'dark-mode' : ''}`}>
                         <span>
                             <img src={timerlogo} alt='timer-logo' className={`timer-logo ${darkMode ? 'dark-mode' : ''}`} />
@@ -136,8 +145,8 @@ const Classic = ({ darkMode }) => {
                             onChange={handleInputChange}
                             onKeyDown={handleKeyDown}
                         />
-                        <button className='pass-button' onClick={handlePass}>
-                            <div className='pass-text'>Pass</div>
+                        <button className='forfeit-button' onClick={handleForfeitClick}>
+                            <div className='forfeit-text'>Forfeit</div>
                         </button>
                     </div>
                 </div>
@@ -151,6 +160,13 @@ const Classic = ({ darkMode }) => {
                 </div>
                 </div>
             )}
+            {showForfeit && (
+                <Modal
+                    message="Are you sure you want to forfeit?"
+                    onConfirm={handleConfirmForfeit}
+                    onCancel={handleCancelForfeit}
+                />
+            )}
             {showModal && !isGameOver && (
                 <Modal
                     message="Are you sure you want to leave? Your test will not be counted."
@@ -161,10 +177,8 @@ const Classic = ({ darkMode }) => {
             {showModal && isGameOver && (
                 navigate("/")
             )}
-            
         </>
     );
-    
 };
 
-export default Classic;
+export default Survival;

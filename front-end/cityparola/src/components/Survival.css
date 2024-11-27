@@ -30,7 +30,7 @@ html, body {
     color: #eee;
 }
 
-.classic-container {
+.survival-container {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -109,13 +109,13 @@ html, body {
     border: none;
 }
 
-.pass-button {
+.forfeit-button {
     position: absolute;
     top: 5px;
     right: 6px;
     width: 100px;
     padding: 8px;
-    background-color: rgba(255, 204, 0, 0.54);
+    background-color: rgb(244, 67, 54);
     border-radius: 30px;
     margin-block-end: auto;
     font-weight: bold;
@@ -123,23 +123,23 @@ html, body {
     cursor: pointer;
 }
 
-.pass-text {
+.forfeit-text {
     color: #ffffff;
     opacity: 0.91;
     margin: 1px 2px 0 0;
     transition: color 0.2s ease;
 }
 
-.pass-button:hover {
+.forfeit-button:hover {
     transform: scale(1.05);
     transition: all 0.2s ease;
 }
 
-.pass-button:not(:hover) {
+.forfeit-button:not(:hover) {
     transition: all 0.2s ease;
 }
 
-.pass-button:hover .pass-text {
+.forfeit-button:hover .forfeit-text {
     color: #000000;
 }
 
@@ -161,6 +161,53 @@ html, body {
 
 .game-over.dark-mode {
     color: #ffffff;
+}
+
+.end-game-buttons {
+    width: 250px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.end-game-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.end-game-button.restart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.end-game-button.restart:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.end-game-button.return {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.end-game-button.return:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 
@@ -187,21 +234,9 @@ html, body {
 }
 
 .score-container.wrong, .combo-container.wrong {
-    animation: wrong-flash 0.8s ease;
+    animation: wrong-flash 0.8s ease-out;
 }
 
-@keyframes pass-flash {
-    0% {
-        background-color: rgba(255, 204, 0, 0.54);
-    }
-    100% {
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-}
-
-.score-container.pass, .combo-container.pass {
-    animation: pass-flash 0.8s ease-out;
-}
 
 
 @media (max-width: 768px) {

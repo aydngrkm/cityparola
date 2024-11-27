@@ -7,6 +7,7 @@ import Settings from './components/Settings';
 import About from './components/About';
 import Contact from './components/Contact';
 import Classic from './components/Classic';
+import Survival from './components/Survival';
 import logo from './assets/logo.png';
 import backgroundImage from './assets/background.jpeg';
 
@@ -16,7 +17,7 @@ function App() {
   
   const ConditionalNavbar = () => {
     const location = useLocation();
-    const hideNavbarPaths = ['/Classic'];
+    const hideNavbarPaths = ['/Classic', '/Survival'];
     return !hideNavbarPaths.includes(location.pathname) ? <Navbar darkMode={darkMode} /> : null;
 };
 
@@ -79,6 +80,7 @@ function App() {
           <Route path="/about" element={<About darkMode={darkMode} />} />
           <Route path="/contact" element={<Contact darkMode={darkMode} />} />
           <Route path="/classic" element={<Classic darkMode={darkMode} />} />
+          <Route path="/survival" element={<Survival darkMode={darkMode} />} />
         </Routes>
         <Settings 
           show={showSettings} 
