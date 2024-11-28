@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css'
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Settings from './components/Settings';
 import About from './components/About';
-import Contact from './components/Contact'
+import Contact from './components/Contact';
+import Classic from './components/Classic';
+import Survival from './components/Survival';
 import logo from './assets/logo.png';
 import backgroundImage from './assets/background.jpeg';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
+  
+  const ConditionalNavbar = () => {
+    const location = useLocation();
+    const hideNavbarPaths = ['/Classic', '/Survival'];
+    return !hideNavbarPaths.includes(location.pathname) ? <Navbar darkMode={darkMode} /> : null;
+};
 
   const toggleDarkMode = () => {
     setDarkMode(prevMode => !prevMode);
@@ -44,7 +52,7 @@ function App() {
             backgroundSize: '74%',
             backgroundRepeat: 'repeat',
             backgroundPosition: 'center',
-            opacity: 0.5,
+            opacity: 0.2,
             position: 'absolute', 
             top: 0,
             left: 0,
@@ -53,7 +61,7 @@ function App() {
             zIndex: -1 
           }}
         />
-        <Navbar darkMode={darkMode} />
+        <ConditionalNavbar darkMode={darkMode} />
         <button 
           onClick={toggleSettings} 
           style={{ 
@@ -71,6 +79,8 @@ function App() {
           <Route path="/" element={<Home toggleSettings={toggleSettings} darkMode={darkMode} />} />
           <Route path="/about" element={<About darkMode={darkMode} />} />
           <Route path="/contact" element={<Contact darkMode={darkMode} />} />
+          <Route path="/classic" element={<Classic darkMode={darkMode} />} />
+          <Route path="/survival" element={<Survival darkMode={darkMode} />} />
         </Routes>
         <Settings 
           show={showSettings} 

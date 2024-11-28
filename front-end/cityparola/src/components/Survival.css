@@ -1,0 +1,256 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.back-button {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    margin-top: 20px;
+    left: 30px;
+}
+
+.back-button.dark-mode {
+    filter: invert(1);
+}
+
+.title {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.title.dark-mode {
+    color: #eee;
+}
+
+.survival-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+}
+
+.txt {
+    font-size: 24px;
+    color: #333;
+}
+
+.txt.dark-mode {
+    color: #eee;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+.timer-logo {
+    width: 35px;
+    height: auto;
+}
+
+.timer-logo.dark-mode {
+    filter: invert(1);
+}
+
+.question-container {
+    padding: 70px 300px;
+    margin: 10px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.right-section {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4vw;
+    margin-top: 25vw;
+}
+
+.score-container, .combo-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.91);
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    transition: background-color 1s ease-out;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30vw;
+}
+
+.input {
+    width: 40vw;
+    padding: 12px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.forfeit-button {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    width: 100px;
+    padding: 8px;
+    background-color: rgb(244, 67, 54);
+    border-radius: 30px;
+    margin-block-end: auto;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.forfeit-text {
+    color: #ffffff;
+    opacity: 0.91;
+    margin: 1px 2px 0 0;
+    transition: color 0.2s ease;
+}
+
+.forfeit-button:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+.forfeit-button:not(:hover) {
+    transition: all 0.2s ease;
+}
+
+.forfeit-button:hover .forfeit-text {
+    color: #000000;
+}
+
+.game-over-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    width: 100vw;
+}
+
+.game-over {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}
+
+.game-over.dark-mode {
+    color: #ffffff;
+}
+
+.end-game-buttons {
+    width: 250px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.end-game-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.end-game-button.restart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.end-game-button.restart:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.end-game-button.return {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.end-game-button.return:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+@keyframes correct-flash {
+    0% {
+        background-color: #4CAF50;
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.score-container.correct, .combo-container.correct {
+    animation: correct-flash 0.8s ease-out;
+}
+
+@keyframes wrong-flash {
+    0% {
+        background-color: #f44336;
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.score-container.wrong, .combo-container.wrong {
+    animation: wrong-flash 0.8s ease-out;
+}
+
+
+
+@media (max-width: 768px) {
+    .input-container {
+        margin-left: 5vw;
+    }
+    .input {
+        width: 80vw;
+    }
+    .right-section {
+        margin-top: 50vw;
+    }
+    .question-container {
+        padding: 50vw 10px;
+        margin: 10px;
+    }
+}

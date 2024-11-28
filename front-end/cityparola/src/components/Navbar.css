@@ -89,10 +89,28 @@
   border: 1px solid black;
 }
 
+.sign-in-button:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.sign-in-button:not(:hover) {
+  transition: all 0.2s ease;
+}
+
 .register-button {
   background-color: #333;
   color: #eee;
   border: 1px solid black;
+}
+
+.register-button:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.register-button:not(:hover) {
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 768px) {
