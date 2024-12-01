@@ -179,3 +179,10 @@ AUTH_USER_MODEL = 'api.User'
 
 # Do not forget to change this in production!
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_HEADERS = [
+    'Origin',
+    'X-Requested-With',
+    'Content-Type',
+    'Accept',
+    # Diğer başlıklar
+]
