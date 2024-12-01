@@ -30,15 +30,14 @@ class CountrySerializer(serializers.ModelSerializer):
         fields = ['id', 'name']
 
 class CitySerializer(serializers.ModelSerializer):
-    country = CountrySerializer()
+    country = serializers.PrimaryKeyRelatedField(queryset=Country.objects.all())
 
     class Meta:
         model = City
         fields = ['id', 'name', 'country']
 
 class QuestionSerializer(serializers.ModelSerializer):
-    # city serializer ya kaldirilacak ya da write only olacak
-    city = CitySerializer()
+    city = serializers.PrimaryKeyRelatedField(queryset=City.objects.all(), write_only=True)
 
     class Meta:
         model = Question
@@ -57,3 +56,8 @@ class FeedbackSerializer(serializers.ModelSerializer):
     class Meta:
         model = Feedback
         fields = ['id', 'body', 'created_at', 'question']
+
+
+class DefaultTestSerializer(serializers.Serializer):
+    letter = serializers.CharField(max_length=1)
+    question = QuestionSerializer()

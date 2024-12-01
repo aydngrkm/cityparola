@@ -1,3 +1,4 @@
+import random
 from .models import (
     User,
     Country, City,
@@ -8,7 +9,8 @@ from .serializers import (
     UserSerializer,
     CountrySerializer, CitySerializer,
     QuestionSerializer, HintSerializer,
-    FeedbackSerializer
+    FeedbackSerializer,
+    DefaultTestSerializer
 )
 from django.http import Http404
 from rest_framework.views import APIView
@@ -50,6 +52,7 @@ class UserDetail(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 ##### Country views
+# admin only yapılmalı?
 class CountryList(APIView):
     def get(self, request, format=None):
         countries = Country.objects.all()
@@ -81,3 +84,102 @@ class CountryDetail(APIView):
         country = get_object_or_404(Country, pk=pk)
         country.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+##### City views
+# admin only yapılmalı?
+class CityList(APIView):
+    def get(self, request, format=None):
+        cities = City.objects.all()
+        serializer = CitySerializer(cities, many=True)
+        return Response(serializer.data)
+
+    def post(self, request, format=None):
+        serializer = CitySerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class CityDetail(APIView):
+    def get(self, request, pk, format=None):
+        city = get_object_or_404(City, pk=pk)
+        serializer = CitySerializer(city)
+        return Response(serializer.data)
+    
+    def put(self, request, pk, format=None):
+        city = get_object_or_404(City, pk=pk)
+        serializer = CitySerializer(city, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        else:
+            Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk, format=None):
+        city = get_object_or_404(City, pk=pk)
+        city.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+##### Question views
+class QuestionList(APIView):
+    def get(self, request, format=None):
+        questions = Question.objects.all()
+        serializer = GetQuestionSerializer(questions, many=True)
+        return Response(serializer.data)
+
+    def post(self, request, format=None):
+        serializer = QuestionSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class QuestionDetail(APIView):
+    def get(self, request, pk, format=None):
+        question = get_object_or_404(Question, pk=pk)
+        serializer = QuestionSerializer(question)
+        return Response(serializer.data)
+    
+    def put(self, request, pk, format=None):
+        question = get_object_or_404(Question, pk=pk)
+        serializer = QuestionSerializer(question, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        else:
+            Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk, format=None):
+        question = get_object_or_404(Question, pk=pk)
+        question.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+##### Default test view
+class DefaultTestView(APIView):
+    def get(self, request, format=None):
+        letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        errors, test_data = [], []
+
+        for letter in letters:
+            cities = City.objects.filter(name__startswith=letter)
+
+            if cities.exists():
+                city = random.choice(cities)
+                questions = Question.objects.filter(city=city)
+                if questions.exists():
+                    question = random.choice(questions)
+                    test_data.append({
+                        'letter': letter,
+                        'question': question
+                    })
+                else:
+                    errors.append(f"No questions found for city '{city.name}' starting with '{letter}'.")
+            else:
+                errors.append(f"No cities found starting with the letter '{letter}'.")
+
+        if errors:
+            return Response({"errors": errors}, status=status.HTTP_404_NOT_FOUND)
+
+        serializer = DefaultTestSerializer(test_data, many=True)
+        return Response(serializer.data)
