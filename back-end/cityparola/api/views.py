@@ -124,7 +124,7 @@ class CityDetail(APIView):
 class QuestionList(APIView):
     def get(self, request, format=None):
         questions = Question.objects.all()
-        serializer = GetQuestionSerializer(questions, many=True)
+        serializer = QuestionSerializer(questions, many=True)
         return Response(serializer.data)
 
     def post(self, request, format=None):
