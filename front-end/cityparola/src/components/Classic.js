@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'
 import Modal from './Modal';
 import './Classic.css';
 import backbtn from '../assets/back_button.png';
@@ -13,7 +14,26 @@ const Classic = ({ darkMode }) => {
     const [inputValue, setInputValue] = useState("");
     const [showModal, setShowModal] = useState(false);
     const [animationClass, setAnimationClass] = useState("");
+    const [question, setQuestion] = useState("");
+    const [questionID, setQuestionID] = useState(2);
+    const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await axios.get(`http://localhost:8000/api/users/2/`);
+            console.log(response.data);
+          } catch (err) {
+            setError(err);
+          } finally {
+            setLoading(false);
+          }
+        };
+    
+        fetchData();
+      }, [questionID]);
 
     useEffect(() => {
         const countdown = setInterval(() => {
@@ -112,7 +132,7 @@ const Classic = ({ darkMode }) => {
                     </div>
                     <div className={`question-container txt ${darkMode ? 'dark-mode' : ''}`}>
                         Question A: <br /><br />
-                        The city where a bullet was fired into the sun
+                        {`${question}`}
                     </div>
                     <div className='right-section'>
                         <div className={`score-container ${animationClass}`}>
