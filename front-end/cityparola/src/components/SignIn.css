@@ -1,0 +1,136 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.signin-box {
+  text-align: center;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  transition: background-color 0.2s ease;
+  width: 50%;
+  height: auto;
+}
+
+.signin-box.light {
+  background-color: rgba(238, 238, 238, 0.8);
+}
+
+.signin-box.dark {
+  background-color: rgba(68, 68, 68, 0.8);
+}
+
+.signin-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin: 15px 0;
+  width: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.input-field.dark {
+  background-color: #444;
+  color: #eee;
+}
+
+.input-field.dark:focus {
+  border-color: #4CAF50;
+}
+
+.button-container {
+  width: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.signin-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.signin-button:hover {
+  transition: background-color 0.2s ease;
+  background-color: #45a049;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.signup-link a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.signin-container.dark .signin-box {
+  background-color: rgba(34, 34, 34, 0.9);
+}
+
+.signin-container.dark .signin-title {
+  color: #eee;
+}
+
+.signin-container.dark .error-message {
+  color: #ffcccc;
+}
+
+.signin-container.dark .input-field {
+  background-color: #444;
+  color: #eee;
+}
+
+.signin-container.dark .signin-button {
+  background-color: #4CAF50;
+  color: white;
+}

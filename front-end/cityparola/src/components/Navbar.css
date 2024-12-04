@@ -78,7 +78,7 @@
   gap: 10px;
 }
 
-.sign-in-button, .register-button {
+.sign-in-button, .sign-up-button {
   padding: 5px 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -98,18 +98,18 @@
   transition: all 0.2s ease;
 }
 
-.register-button {
+.sign-up-button {
   background-color: #333;
   color: #eee;
   border: 1px solid black;
 }
 
-.register-button:hover {
+.sign-up-button:hover {
   transform: scale(1.05);
   transition: all 0.2s ease;
 }
 
-.register-button:not(:hover) {
+.sign-up-button:not(:hover) {
   transition: all 0.2s ease;
 }
 

@@ -37,7 +37,7 @@ const Navbar = ({ darkMode }) => {
       
       <div className={`nav-links ${isSidebarOpen ? 'sidebar-open' : ''} ${darkMode ? 'dark' : ''}`}>
         <span className="menu-title">Menu</span>
-        <Link to="/" className={`nav-link nav1 ${darkMode ? 'dark' : ''}`} onClick={toggleSidebar}>Leaderboard</Link>
+        <Link to="/leaderboard" className={`nav-link nav1 ${darkMode ? 'dark' : ''}`} onClick={toggleSidebar}>Leaderboard</Link>
         <Link to="/about" className={`nav-link ${darkMode ? 'dark' : ''}`} onClick={toggleSidebar}>About Us</Link>
         <Link to="/contact" className={`nav-link ${darkMode ? 'dark' : ''}`} onClick={toggleSidebar}>Contact</Link>
         
@@ -45,8 +45,8 @@ const Navbar = ({ darkMode }) => {
           <Link to="/sign-in">
             <button className="sign-in-button" onClick={toggleSidebar}>Sign In</button>
           </Link>
-          <Link to="/register">
-            <button className="register-button" onClick={toggleSidebar}>Register</button>
+          <Link to="/sign-up">
+            <button className="sign-up-button" onClick={toggleSidebar}>Sign Up</button>
           </Link>
         </div>
       </div>
