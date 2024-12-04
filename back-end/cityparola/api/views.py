@@ -8,7 +8,7 @@ from .models import (
 from .serializers import (
     UserSerializer,
     CountrySerializer, CitySerializer,
-    QuestionSerializer, HintSerializer,
+    QuestionSerializer, TestQuestionSerializer, HintSerializer,
     FeedbackSerializer,
     DefaultTestSerializer
 )
@@ -183,3 +183,34 @@ class DefaultTestView(APIView):
 
         serializer = DefaultTestSerializer(test_data, many=True)
         return Response(serializer.data)
+
+class SurvivalTestView(APIView):
+    def post(self, request, format=None):
+        sent_questions_ids = list(map(int, request.data.get('question_ids', [])))
+
+        questions = list(Question.objects.exclude(id__in=sent_questions_ids))
+        if len(questions) == 0:
+            return Response({"error": "No more questions left"}, status=400)
+        
+        new_questions = []
+        for i in range(min(len(questions), 10)):
+            question = random.choice(questions)
+            new_questions.append(question)
+            questions.remove(question)
+        
+        serializer = TestQuestionSerializer(new_questions, many=True)
+        return Response(serializer.data)
+
+class CheckAnswerView(APIView):
+    def post(self, request, format=None):
+        question_id = request.data.get('question_id')
+        answer = request.data.get('answer')
+
+        if not question_id or not answer:
+            return Response(
+                {"detail": "Both 'question_id' and 'answer' are required."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+        question = get_object_or_404(Question, pk=question_id)
+        return Response({'is_correct': question.city.name == answer.title()})
