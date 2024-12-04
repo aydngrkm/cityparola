@@ -23,7 +23,7 @@ const Classic = ({ darkMode }) => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get(`http://localhost:8000/api/users/2/`);
+            const response = await axios.get(`http://localhost:8000/api/default-test`);
             console.log(response.data);
           } catch (err) {
             setError(err);
