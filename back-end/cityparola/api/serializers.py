@@ -37,21 +37,26 @@ class CitySerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'country']
 
 class QuestionSerializer(serializers.ModelSerializer):
-    city = serializers.PrimaryKeyRelatedField(queryset=City.objects.all(), write_only=True)
+    city = serializers.PrimaryKeyRelatedField(queryset=City.objects.all())
 
     class Meta:
         model = Question
         fields = ['id', 'question_text', 'city']
 
+class TestQuestionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Question
+        fields = ['id', 'question_text']
+
 class HintSerializer(serializers.ModelSerializer):
-    question = QuestionSerializer()
+    question = TestQuestionSerializer()
 
     class Meta:
         model = Hint
         fields = ['id', 'hint_text', 'question']
 
 class FeedbackSerializer(serializers.ModelSerializer):
-    question = QuestionSerializer()
+    question = TestQuestionSerializer()
 
     class Meta:
         model = Feedback
@@ -60,4 +65,4 @@ class FeedbackSerializer(serializers.ModelSerializer):
 
 class DefaultTestSerializer(serializers.Serializer):
     letter = serializers.CharField(max_length=1)
-    question = QuestionSerializer()
+    question = TestQuestionSerializer()

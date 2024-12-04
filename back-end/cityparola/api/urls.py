@@ -15,7 +15,9 @@ urlpatterns = [
     path('cities/<int:pk>', views.CityDetail.as_view()),
     path('questions/', views.QuestionList.as_view()),
     path('questions/<int:pk>', views.QuestionDetail.as_view()),
-    path('default-test/', views.DefaultTestView.as_view(), name='default-test'),
+    path('default-test/', views.DefaultTestView.as_view()),
+    path('survival-test/', views.SurvivalTestView.as_view()),
+    path('check-answer/', views.CheckAnswerView.as_view()),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
