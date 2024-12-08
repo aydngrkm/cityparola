@@ -1,9 +1,15 @@
-import { Route, Navigate } from "react-router-dom";
+import { Navigate } from 'react-router-dom';
+import { useContext } from 'react';
+import AuthContext from '../context/AuthContext';
 
-const PrivateRouter = ({ children, ...rest }) => {
-    const authenticated = false;
+const PrivateRouter = ({ children }) => {
+  const { authTokens } = useContext(AuthContext);
 
-    return authenticated ? children : <Navigate to="/sign-in" replace />;
+  if (!authTokens || Object.keys(authTokens).length === 0) {
+    return <Navigate to="/sign-in" replace />;
+  }
+
+  return children;
 };
 
 export default PrivateRouter;

@@ -36,7 +36,10 @@ html, body {
   
   .input-group {
     margin: 15px 0;
-    width: 80vh;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -135,3 +138,8 @@ html, body {
     color: white;
   }
   
+  @media (max-width: 768px) {
+    .input-group {
+      width: 95%;
+    }
+  }

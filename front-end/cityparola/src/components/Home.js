@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import AuthContext from '../context/AuthContext';
 import africa from '../assets/africa.png'
 import america from '../assets/america.png'
 import asia from '../assets/asia.png'
@@ -9,6 +10,8 @@ import './Home.css';
 const Home = ({ toggleSettings, darkMode }) => {
 
   const [selectedContinent, setSelectedContinent] = useState(null);
+  let {name} = useContext(AuthContext);
+  console.log(name);
 
   useEffect(() => {
     if (darkMode) {
@@ -31,24 +34,6 @@ const Home = ({ toggleSettings, darkMode }) => {
 
   return (
     <>
-    
-    <div className="continent-selector">
-      <div className={`dropdown ${darkMode ? 'dark' : 'light'}`}>
-        <div className={`dropdown-header ${darkMode ? 'dark' : 'light'}`}>
-          {selectedContinent ? selectedContinent : "World"}
-        </div>
-        <div className={`dropdown-menu ${darkMode ? 'dark' : 'light'}`}>
-            {["Asia", "Europe", "America", "Africa"].map((continent) => (
-              <div key={continent}
-                className={`dropdown-item ${selectedContinent === continent ? "selected" : ""} ${darkMode ? 'dark' : 'light'}`}
-                onClick={() => handleContinentClick(continent)}
-              >
-                <img src={continentImages[continent]} alt="continent" className="continent-icon"/> {continent}
-              </div>
-            ))}
-          </div>
-      </div>
-    </div>
      
     <div className="parolla-container">
       <div className={`parolla-box ${darkMode ? 'dark' : 'light'}`}>
@@ -67,5 +52,26 @@ const Home = ({ toggleSettings, darkMode }) => {
     </>
   );
 };
+
+/*
+<div className="continent-selector">
+  <div className={`dropdown ${darkMode ? 'dark' : 'light'}`}>
+    <div className={`dropdown-header ${darkMode ? 'dark' : 'light'}`}>
+      {selectedContinent ? selectedContinent : "World"}
+    </div>
+    <div className={`dropdown-menu ${darkMode ? 'dark' : 'light'}`}>
+        {["Asia", "Europe", "America", "Africa"].map((continent) => (
+          <div key={continent}
+            className={`dropdown-item ${selectedContinent === continent ? "selected" : ""} ${darkMode ? 'dark' : 'light'}`}
+            onClick={() => handleContinentClick(continent)}
+          >
+            <img src={continentImages[continent]} alt="continent" className="continent-icon"/> {continent}
+          </div>
+        ))}
+      </div>
+  </div>
+</div>
+*/
+
 
 export default Home;

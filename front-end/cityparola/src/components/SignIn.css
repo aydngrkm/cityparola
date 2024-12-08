@@ -34,14 +34,17 @@ html, body {
   margin-bottom: 10px;
 }
 
-.input-group {
+.input-group-1 {
   margin: 15px 0;
-  width: 80vh;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.input-field {
+.input-field-1 {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
@@ -52,17 +55,17 @@ html, body {
   margin-bottom: 10px;
 }
 
-.input-field:focus {
+.input-field-1:focus {
   outline: none;
   border-color: #4CAF50;
 }
 
-.input-field.dark {
+.input-field-1.dark {
   background-color: #444;
   color: #eee;
 }
 
-.input-field.dark:focus {
+.input-field-1.dark:focus {
   border-color: #4CAF50;
 }
 
@@ -125,7 +128,7 @@ html, body {
   color: #ffcccc;
 }
 
-.signin-container.dark .input-field {
+.signin-container.dark .input-field-1 {
   background-color: #444;
   color: #eee;
 }
@@ -133,4 +136,10 @@ html, body {
 .signin-container.dark .signin-button {
   background-color: #4CAF50;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .input-group-1 {
+    width: 95%;
+  }
 }

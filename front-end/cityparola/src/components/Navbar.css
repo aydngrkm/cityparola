@@ -32,6 +32,7 @@
   border: none;
   cursor: pointer;
   z-index: 3;
+  margin: 0 auto;
 }
 
 .hamburger.dark {
@@ -111,6 +112,49 @@
 
 .sign-up-button:not(:hover) {
   transition: all 0.2s ease;
+}
+
+.user-profile {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidebar-profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sign-out-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sign-out-button:hover {
+  background-color: #ff1a1a;
 }
 
 @media (max-width: 768px) {

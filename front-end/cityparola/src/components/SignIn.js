@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './SignIn.css';
 import axios from 'axios';
+import { useContext } from 'react';
+import AuthContext from '../context/AuthContext';
+import { jwtDecode } from 'jwt-decode';
 
 const SignIn = ({ darkMode }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const { setAuthTokens, setUser } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (darkMode) {
@@ -18,27 +22,35 @@ const SignIn = ({ darkMode }) => {
     }
   }, [darkMode]);
 
-  const handleSignIn = (e) => {
+  const handleSignIn = async (e) => {
     e.preventDefault();
+    setErrorMessage(null);
     if (username === '' || password === '') {
       setErrorMessage('Please enter both username and password');
     } else {
-      console.log('Signing in:', username);
+      await handleSubmit();
     }
   };
 
   const handleSubmit = async () => {
     setLoading(true);
-    setError(null);
+    setErrorMessage(null);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/users', {
+      const response = await axios.post('http://localhost:8000/api/token/', {
         username,
         password
       });
-      console.log(response.data);
+
+      if (response.status === 200 && response.data && response.data.access) {
+        setAuthTokens(response.data);
+        setUser(jwtDecode(response.data.access));
+        navigate('/');
+      } else {
+        alert('Invalid login credentials or unexpected response');
+      }
     } catch (err) {
-      setError(err.message || 'An Error Occured');
+      setErrorMessage(err.message || 'An error occurred while logging in');
     } finally {
       setLoading(false);
     }
@@ -69,8 +81,8 @@ const SignIn = ({ darkMode }) => {
             />
           </div>
           <div className="button-container">
-            <button type="submit" className="signin-button">
-              Sign In
+            <button type="submit" className="signin-button" disabled={loading}>
+              {loading ? 'Signing In...' : 'Sign In'}
             </button>
           </div>
         </form>
