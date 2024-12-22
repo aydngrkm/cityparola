@@ -128,22 +128,6 @@
   cursor: pointer;
 }
 
-.sidebar-profile {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.profile-menu {
-  position: absolute;
-  top: 50px;
-  right: 0;
-  background-color: #eee;
-  border: 1px solid #ddd;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .sign-out-button {
   background-color: #ff4d4d;
   color: #fff;

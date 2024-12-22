@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './SignUp.css';
 import axios from 'axios';
+import { useContext } from 'react';
+import AuthContext from '../context/AuthContext';
+import { jwtDecode } from 'jwt-decode';
 
 const SignUp = ({ darkMode }) => {
   const [email, setEmail] = useState('');
@@ -11,6 +14,7 @@ const SignUp = ({ darkMode }) => {
   const [errorMessage, setErrorMessage] = useState(null);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const { setAuthTokens, setUser } = useContext(AuthContext);
 
   React.useEffect(() => {
     if (darkMode) {
@@ -38,10 +42,26 @@ const SignUp = ({ darkMode }) => {
         password
       });
 
-      localStorage.setItem('authToken', response.data.token);
-      navigate('/');
+      if (response.status === 201) {
+        const tokenResponse = await axios.post('http://localhost:8000/api/token/', {
+          username,
+          password
+        });
+
+        if (tokenResponse.status === 200 && tokenResponse.data.access) {
+          localStorage.setItem('authTokens', JSON.stringify(tokenResponse.data));
+          setAuthTokens(tokenResponse.data);
+          setUser(jwtDecode(tokenResponse.data.access));
+          navigate('/');
+        } else {
+          setErrorMessage('Registration succeeded, but failed to retrieve token');
+        }
+      } else {
+        setErrorMessage('Registration failed');
+      }
     } catch (err) {
-      setErrorMessage('An error occurred during registration');
+      console.error('Error during registration:', err.response || err.message);
+      setErrorMessage('This username or email is already in use');
     } finally {
       setLoading(false);
     }

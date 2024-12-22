@@ -10,8 +10,6 @@ import './Home.css';
 const Home = ({ toggleSettings, darkMode }) => {
 
   const [selectedContinent, setSelectedContinent] = useState(null);
-  let {name} = useContext(AuthContext);
-  console.log(name);
 
   useEffect(() => {
     if (darkMode) {

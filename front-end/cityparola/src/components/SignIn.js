@@ -44,6 +44,7 @@ const SignIn = ({ darkMode }) => {
 
       if (response.status === 200 && response.data && response.data.access) {
         setAuthTokens(response.data);
+        console.log(response.data);
         setUser(jwtDecode(response.data.access));
         navigate('/');
       } else {
@@ -60,7 +61,7 @@ const SignIn = ({ darkMode }) => {
     <div className={`signin-container ${darkMode ? 'dark' : 'light'}`}>
       <div className={`signin-box ${darkMode ? 'dark' : 'light'}`}>
         <h1 className="signin-title">Sign In</h1>
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
+        {errorMessage && <p className="error-message">Username or Password is invalid</p>}
         <form onSubmit={handleSignIn}>
           <div className="input-group">
             <input

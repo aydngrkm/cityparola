@@ -30,16 +30,6 @@ const Navbar = ({ darkMode }) => {
       </button>
 
       <div className={`nav-links ${isSidebarOpen ? 'sidebar-open' : ''} ${darkMode ? 'dark' : ''}`}>
-        <div className="sidebar-profile">
-          {user && (
-            <img 
-              src={`https://avatars.dicebear.com/api/initials/${user.username}.svg`} 
-              alt="User" 
-              className="user-logo"
-            />
-          )}
-        </div>
-
         <span className="menu-title">Menu</span>
         <Link to="/leaderboard" className={`nav-link ${darkMode ? 'dark' : ''}`} onClick={toggleSidebar}>Leaderboard</Link>
         <Link to="/about" className={`nav-link ${darkMode ? 'dark' : ''}`} onClick={toggleSidebar}>About Us</Link>
