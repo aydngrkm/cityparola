@@ -17,6 +17,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.shortcuts import get_object_or_404
+from rest_framework.permissions import IsAuthenticated
 
 ##### User views
 class UserList(APIView):
@@ -186,6 +187,11 @@ class DefaultTestView(APIView):
 
 class SurvivalTestView(APIView):
     def post(self, request, format=None):
+        token = request.headers.get('Authorization')
+        if token:
+            print("Received token:", token)
+        else:
+            print("No token provided")
         sent_questions_ids = list(map(int, request.data.get('question_ids', [])))
 
         questions = list(Question.objects.exclude(id__in=sent_questions_ids))

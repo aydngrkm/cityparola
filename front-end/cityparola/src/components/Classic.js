@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios'
+import axios from 'axios';
 import Modal from './Modal';
 import './Classic.css';
 import backbtn from '../assets/back_button.png';
@@ -14,26 +14,28 @@ const Classic = ({ darkMode }) => {
     const [inputValue, setInputValue] = useState("");
     const [showModal, setShowModal] = useState(false);
     const [animationClass, setAnimationClass] = useState("");
-    const [question, setQuestion] = useState("");
-    const [questionID, setQuestionID] = useState(2);
+    const [questions, setQuestions] = useState([]);
+    const [modifiableQuestions, setModifiableQuestions] = useState([]);
+    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
 
     useEffect(() => {
         const fetchData = async () => {
-          try {
-            const response = await axios.get(`http://localhost:8000/api/default-test`);
-            console.log(response.data);
-          } catch (err) {
-            setError(err);
-          } finally {
-            setLoading(false);
-          }
+            try {
+                const response = await axios.get(`http://localhost:8000/api/default-test`);
+                setQuestions(response.data);
+                setModifiableQuestions(response.data);
+            } catch (err) {
+                setError(err);
+            } finally {
+                setLoading(false);
+            }
         };
-    
+
         fetchData();
-      }, [questionID]);
+    }, []);
 
     useEffect(() => {
         const countdown = setInterval(() => {
@@ -59,26 +61,52 @@ const Classic = ({ darkMode }) => {
         setInputValue(event.target.value);
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         const answer = inputValue.trim().toUpperCase();
-        if (answer === 'ADANA') {
-            setAnimationClass("correct");
-            setScore((prevScore) => prevScore + (10 * (combo + 1)));
-            setCombo((prevCombo) => prevCombo + 1);
-        } 
-        else if (answer !== "") {
-            setAnimationClass("wrong");
-            setCombo(0);
+        const questionId = modifiableQuestions[currentQuestionIndex].question.id;
+
+        try {
+            const response = await axios.post(`http://localhost:8000/api/check-answer/`, {
+                question_id: questionId,
+                answer: answer
+            });
+
+            const { is_correct } = response.data;
+            if (is_correct) {
+                setAnimationClass("correct");
+                setScore((prevScore) => prevScore + (10 * (combo + 1)));
+                setCombo((prevCombo) => prevCombo + 1);
+            } else {
+                setAnimationClass("wrong");
+                setCombo(0);
+            }
+
+            setTimeout(() => setAnimationClass(""), 800);
+            moveToNextQuestion();
+
+        } catch (err) {
+            setError(err);
         }
-        setTimeout(() => setAnimationClass(""), 800);
+
         setInputValue("");
     };
-    
+
     const handlePass = () => {
         setAnimationClass("pass");
         setTimeout(() => setAnimationClass(""), 800);
         setCombo(0);
+        const skippedQuestion = modifiableQuestions[currentQuestionIndex];
+        setModifiableQuestions(prev => [...prev, skippedQuestion]);
         setInputValue("");
+        moveToNextQuestion();
+    };
+
+    const moveToNextQuestion = () => {
+        if (currentQuestionIndex < modifiableQuestions.length - 1) {
+            setCurrentQuestionIndex(prevIndex => prevIndex + 1);
+        } else {
+            setIsGameOver(true);
+        }
     };
 
     const handleKeyDown = (event) => {
@@ -88,8 +116,12 @@ const Classic = ({ darkMode }) => {
     };
 
     const handleBackClick = (event) => {
-        event.preventDefault();
-        setShowModal(true);
+        if (isGameOver) {
+            navigate("/");
+        } else {
+            event.preventDefault();
+            setShowModal(true);
+        }
     };
 
     const handleConfirmExit = () => {
@@ -103,15 +135,16 @@ const Classic = ({ darkMode }) => {
 
     const handleReturnHome = () => {
         navigate("/");
-    }
+    };
 
     const handleRestartGame = () => {
         setScore(0);
         setCombo(0);
         setTimer(300);
         setIsGameOver(false);
+        setCurrentQuestionIndex(0);
         setInputValue("");
-        navigate("/Survival");
+        setModifiableQuestions(questions);
     };
 
     return (
@@ -121,7 +154,7 @@ const Classic = ({ darkMode }) => {
                 <img src={backbtn} alt='bckbtn' className={`back-button ${darkMode ? 'dark-mode' : ''}`} />
             </a>
             <div className={`title ${darkMode ? 'dark-mode' : ''}`}>City Parolla</div>
-            
+
             {!isGameOver && (
                 <div className={`classic-container ${darkMode ? 'dark-mode' : ''}`}>
                     <div className={`timer txt ${darkMode ? 'dark-mode' : ''}`}>
@@ -131,8 +164,8 @@ const Classic = ({ darkMode }) => {
                         <span>{writeTime(timer)}</span>
                     </div>
                     <div className={`question-container txt ${darkMode ? 'dark-mode' : ''}`}>
-                        Question A: <br /><br />
-                        {`${question}`}
+                        Question {modifiableQuestions[currentQuestionIndex]?.letter}: <br /><br />
+                        {modifiableQuestions[currentQuestionIndex] ? modifiableQuestions[currentQuestionIndex].question.question_text : 'Loading...'}
                     </div>
                     <div className='right-section'>
                         <div className={`score-container ${animationClass}`}>
@@ -162,15 +195,17 @@ const Classic = ({ darkMode }) => {
                     </div>
                 </div>
             )}
+
             {isGameOver && (
                 <div className='game-over-container'>
-                <div className={`game-over ${darkMode ? 'dark-mode' : ''}`}>Game Over<br/>Your Score: {score}</div>
-                <div className='end-game-buttons'>
-                    <button className='end-game-button restart' onClick={handleRestartGame}>Restart</button>
-                    <button className='end-game-button return' onClick={handleReturnHome}>Return Home</button>
-                </div>
+                    <div className={`game-over ${darkMode ? 'dark-mode' : ''}`}>Game Over<br />Your Score: {score}</div>
+                    <div className='end-game-buttons'>
+                        <button className='end-game-button restart' onClick={handleRestartGame}>Restart</button>
+                        <button className='end-game-button return' onClick={handleReturnHome}>Return Home</button>
+                    </div>
                 </div>
             )}
+
             {showModal && !isGameOver && (
                 <Modal
                     message="Are you sure you want to leave? Your test will not be counted."
