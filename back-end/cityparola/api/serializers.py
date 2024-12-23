@@ -49,7 +49,7 @@ class TestQuestionSerializer(serializers.ModelSerializer):
         fields = ['id', 'question_text']
 
 class HintSerializer(serializers.ModelSerializer):
-    question = TestQuestionSerializer()
+    question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
 
     class Meta:
         model = Hint
