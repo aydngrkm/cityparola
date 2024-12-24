@@ -188,7 +188,6 @@ const Classic = ({ darkMode }) => {
                 setHints(prevHints => [...prevHints, response.data.hint_text]);
                 setHintAvailable(prev => prev - 1);
                 setShowHints(true);
-                console.log(`Question ID: ${modifiableQuestions[currentQuestionIndex].question.id}, Hint: ${response.data.hint}`);
             } catch (err) {
                 console.error("Error fetching hint:", err);
             }

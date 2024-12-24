@@ -46,17 +46,7 @@ const Navbar = ({ darkMode }) => {
       <Link to="/" className="logo-link">
         <img src={logo} alt="Logo" className="logo" />
       </Link>
-      {user ? (
-        <div className="username">
-          <p>
-            Hello {username}
-          </p>
-        </div>
-      ) : (
-        <h2>
-          
-        </h2>
-      )}
+      
       <div className="flex-spacer"></div>
 
       <button 
@@ -96,3 +86,18 @@ const Navbar = ({ darkMode }) => {
 };
 
 export default Navbar;
+
+
+/*
+{user ? (
+        <div className="username">
+          <p>
+            Hello {username}
+          </p>
+        </div>
+      ) : (
+        <h2>
+          
+        </h2>
+      )}
+*/

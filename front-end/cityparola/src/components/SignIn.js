@@ -46,7 +46,6 @@ const SignIn = ({ darkMode }) => {
         setAuthTokens(response.data);
         const decodedUser = jwtDecode(response.data.access);
         setUser(decodedUser); 
-        console.log(decodedUser);
 
         navigate('/');
       } else {

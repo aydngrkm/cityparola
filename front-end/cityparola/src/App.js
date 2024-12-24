@@ -11,6 +11,7 @@ import Classic from './components/Classic';
 import Survival from './components/Survival';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
+import Feedback from './components/Feedback';
 import Leaderboard from './components/Leaderboard';
 import PrivateRouter from './utils/PrivateRouter';
 import logo from './assets/logo.png';
@@ -87,7 +88,12 @@ function App() {
             <Route path="/about" element={<About darkMode={darkMode} />} />
             <Route path="/contact" element={<Contact darkMode={darkMode} />} />
             <Route path="/classic" element={<Classic darkMode={darkMode} />} />
-            <Route path="/leaderboard" element={<Leaderboard darkMode={darkMode} />} />
+            <Route path="/feedback" element={<Feedback darkMode={darkMode} />} />
+            <Route path="/leaderboard" element={
+              <PrivateRouter>
+                <Leaderboard darkMode={darkMode} />
+              </PrivateRouter>
+            } />
             <Route path="/survival" element={
               <PrivateRouter>
                 <Survival darkMode={darkMode} />

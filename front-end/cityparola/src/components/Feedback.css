@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .feedback-box {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s ease;
+    width: 60%;
+    height: auto;
+  }
+  
+  .feedback-box.light {
+    background-color: rgba(238, 238, 238, 0.8);
+  }
+  
+  .feedback-box.dark {
+    background-color: rgba(68, 68, 68, 0.8);
+  }
+  
+  .feedback-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .feedback-description {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  .feedback-textarea {
+    width: 90%;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+  }
+  
+  .feedback-textarea:focus {
+    outline: none;
+    background-color: #f0f0f0;
+  }
+  
+  .feedback-submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-submit-button:hover {
+    background-color: #4CAF50;
+  }
+  
+  .feedback-submit-button:active {
+    background-color: #4CAF50;
+  }
+  

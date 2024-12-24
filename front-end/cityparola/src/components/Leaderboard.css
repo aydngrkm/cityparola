@@ -79,7 +79,8 @@ html, body {
   }
   
   .highlight {
-    color: red;
+    font-weight: bold;
+    font-style: italic;
   }
   
   .leaderboard-item span {

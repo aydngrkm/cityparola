@@ -18,14 +18,27 @@ export const AuthProvider = ({ children }) => {
       : null;
   });
 
+  const [username, setUsername] = useState(null);
+
   useEffect(() => {
     if (authTokens) {
       localStorage.setItem('authTokens', JSON.stringify(authTokens));
       const decodedUser = jwtDecode(authTokens.access);
       setUser(decodedUser);
+
+      const fetchData = async () => {
+        try {
+          const response = await axios.get(`http://localhost:8000/api/users/${decodedUser.user_id}/`);
+          setUsername(response.data.username);
+        } catch (error) {
+          console.error('Error fetching username:', error);
+        }
+      };
+      fetchData();
     } else {
       localStorage.removeItem('authTokens');
       setUser(null);
+      setUsername(null);
     }
   }, [authTokens]);
 
@@ -66,7 +79,8 @@ export const AuthProvider = ({ children }) => {
     user,
     setUser,
     loginUser,
-    logoutUser
+    logoutUser,
+    username,
   };
 
   return (
