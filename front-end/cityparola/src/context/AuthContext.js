@@ -21,8 +21,11 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     if (authTokens) {
       localStorage.setItem('authTokens', JSON.stringify(authTokens));
+      const decodedUser = jwtDecode(authTokens.access);
+      setUser(decodedUser);
     } else {
       localStorage.removeItem('authTokens');
+      setUser(null);
     }
   }, [authTokens]);
 
