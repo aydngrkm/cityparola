@@ -217,6 +217,8 @@ class DefaultTestView(APIView):
         return Response(serializer.data)
 
 class SurvivalTestView(APIView):
+    permission_classes = [IsAuthenticated]
+    
     def post(self, request, format=None):
         sent_questions_ids = list(map(int, request.data.get('question_ids', [])))
 
