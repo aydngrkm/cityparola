@@ -12,6 +12,9 @@ class Country(models.Model):
         self.name = self.name.title()
         super().save(*args, **kwargs)
 
+    def __str__(self):
+        return self.name
+
 class City(models.Model):
     name = models.CharField(max_length=255, unique=True)
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
@@ -19,6 +22,9 @@ class City(models.Model):
     def save(self, *args, **kwargs):
         self.name = self.name.title()
         super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.name
 
 class Question(models.Model):
     question_text = models.TextField()
