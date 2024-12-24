@@ -915,7 +915,7 @@
     "model": "api.question",
     "pk": 115,
     "fields": {
-      "question_text": "Which Japanese metropolis hosts Shibuya Crossing and cherry blossom festivals?",
+      "question_text": "Which metropolis hosts Shibuya Crossing and cherry blossom festivals?",
       "city": 115
     }
   },
@@ -1197,6 +1197,46 @@
     "fields": {
       "question_text": "Which Canadian northern city is known for its midnight sun and proximity to Great Slave Lake?",
       "city": 150
+    }
+  },
+  {
+    "model": "api.question",
+    "pk": 151,
+    "fields": {
+      "question_text": "What city is known for having the world's busiest railway station?",
+      "city": 115
+    }
+  },
+  {
+    "model": "api.question",
+    "pk": 152,
+    "fields": {
+      "question_text": "Which city is famous for its high-tech skyscrapers, anime culture, and historical temples like Sensō-ji?",
+      "city": 115
+    }
+  },
+  {
+    "model": "api.question",
+    "pk": 153,
+    "fields": {
+      "question_text": "What city is home to one of the Seven Wonders of the Ancient World, the Great Pyramid of Giza?",
+      "city": 13
+    }
+  },
+  {
+    "model": "api.question",
+    "pk": 153,
+    "fields": {
+      "question_text": "Which city is known for the Eiffel Tower and is often called the 'City of Light'?",
+      "city": 91
+    }
+  },
+  {
+    "model": "api.question",
+    "pk": 154,
+    "fields": {
+      "question_text": "Which city is known for the Eiffel Tower and is often called the 'City of Light'?",
+      "city": 91
     }
   }
 ]

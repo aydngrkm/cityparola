@@ -1198,5 +1198,37 @@
       "hint_text": "This city is in Canada's Northwest Territories, near Great Slave Lake.",
       "question": 150
     }
+  },
+  {
+    "model": "api.hint",
+    "pk": 151,
+    "fields": {
+      "hint_text": "This city is also famous for its technology, sushi, and Mount Fuji.",
+      "question": 151
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 152,
+    "fields": {
+      "hint_text": "This city is one of the world's most populous and is Japan's capital.",
+      "question": 152
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 153,
+    "fields": {
+      "hint_text": "This city is located near the Nile River and is the largest city in Africa.",
+      "question": 153
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 154,
+    "fields": {
+      "hint_text": "This city is famous for its art, culture, and fashion.",
+      "question": 154
+    }
   }
 ]
