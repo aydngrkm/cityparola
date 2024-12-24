@@ -626,14 +626,14 @@
     "model": "api.country",
     "pk": 90,
     "fields": {
-      "name": "Korea, North"
+      "name": "North Korea"
     }
   },
   {
     "model": "api.country",
     "pk": 91,
     "fields": {
-      "name": "Korea, South"
+      "name": "South Korea"
     }
   },
   {

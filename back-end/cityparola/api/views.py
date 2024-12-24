@@ -264,7 +264,7 @@ class GetLeaderboard(APIView):
 
         leaderboard = []
         
-        for user in all_users[:5]:
+        for user in all_users[:50]:
             leaderboard.append({"username": user.username, "score": user.score})
 
         data = {

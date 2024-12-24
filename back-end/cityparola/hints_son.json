@@ -1,0 +1,1042 @@
+[
+  {
+    "model": "api.hint",
+    "pk": 1,
+    "fields": {
+      "hint_text": "This city is also famous for its technology, sushi, and Mount Fuji.",
+      "question": 1
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 2,
+    "fields": {
+      "hint_text": "This city is located near the Nile River and is the largest city in Africa.",
+      "question": 2
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 3,
+    "fields": {
+      "hint_text": "This city is famous for its art, culture, and fashion.",
+      "question": 3
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 4,
+    "fields": {
+      "hint_text": "The capital of the UK, home to the royal family.",
+      "question": 4
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 6,
+    "fields": {
+      "hint_text": "It is the capital of Italy and has a history dating back to ancient times.",
+      "question": 6
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 8,
+    "fields": {
+      "hint_text": "It is a transcontinental city that straddles both Europe and Asia.",
+      "question": 8
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 9,
+    "fields": {
+      "hint_text": "It is a transcontinental city that straddles both Europe and Asia.",
+      "question": 9
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 11,
+    "fields": {
+      "hint_text": "This city is often considered the cradle of Western civilization.",
+      "question": 11
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 12,
+    "fields": {
+      "hint_text": "It is India's financial and entertainment capital.",
+      "question": 12
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 13,
+    "fields": {
+      "hint_text": "This city is near the Great Pyramids and the Nile River.",
+      "question": 13
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 14,
+    "fields": {
+      "hint_text": "This city is known for luxury shopping and ultramodern architecture.",
+      "question": 14
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 15,
+    "fields": {
+      "hint_text": "Located on Spain's northeastern coast, it's known for its Mediterranean climate and culture.",
+      "question": 15
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 16,
+    "fields": {
+      "hint_text": "This city is one of the most diverse in Canada.",
+      "question": 16
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 17,
+    "fields": {
+      "hint_text": "It's known for tango music and vibrant street culture.",
+      "question": 17
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 18,
+    "fields": {
+      "hint_text": "This city is a major political and cultural center in Europe.",
+      "question": 18
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 19,
+    "fields": {
+      "hint_text": "This city's architecture blends medieval and modern styles.",
+      "question": 19
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 20,
+    "fields": {
+      "hint_text": "This city is home to Hollywood and beautiful beaches.",
+      "question": 20
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 21,
+    "fields": {
+      "hint_text": "This city served as Japan's capital for over one thousand years.",
+      "question": 21
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 22,
+    "fields": {
+      "hint_text": "It is the second-largest city in Canada.",
+      "question": 22
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 23,
+    "fields": {
+      "hint_text": "This city is located at the southern tip of Africa.",
+      "question": 23
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 24,
+    "fields": {
+      "hint_text": "This city was a British colony until 1997.",
+      "question": 24
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 25,
+    "fields": {
+      "hint_text": "This city is the capital of Scotland.",
+      "question": 25
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 26,
+    "fields": {
+      "hint_text": "It's the entertainment capital of the world.",
+      "question": 26
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 27,
+    "fields": {
+      "hint_text": "This city has a rich artistic heritage and is known for its liberal culture.",
+      "question": 27
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 28,
+    "fields": {
+      "hint_text": "It is Thailand's capital and a major hub for tourism.",
+      "question": 28
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 29,
+    "fields": {
+      "hint_text": "It's located in the Tuscany region of Italy.",
+      "question": 29
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 30,
+    "fields": {
+      "hint_text": "This city is the cultural hub of French-speaking Canada.",
+      "question": 30
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 101,
+    "fields": {
+      "hint_text": "This city is one of the oldest in China and lies at the starting point of the Silk Road.",
+      "question": 101
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 102,
+    "fields": {
+      "hint_text": "This city is one of the oldest European settlements in North America.",
+      "question": 102
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 105,
+    "fields": {
+      "hint_text": "This port city lies on the eastern coast of China, along the Yellow Sea.",
+      "question": 105
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 106,
+    "fields": {
+      "hint_text": "It is a UNESCO World Heritage site known for its well-preserved colonial architecture.",
+      "question": 106
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 110,
+    "fields": {
+      "hint_text": "Located on the River Clyde, it is Scotland's largest city.",
+      "question": 110
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 111,
+    "fields": {
+      "hint_text": "This coastal city is known for its natural beauty and is an important port.",
+      "question": 111
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 114,
+    "fields": {
+      "hint_text": "Situated on the Baltic Sea, it has a rich maritime history.",
+      "question": 114
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 119,
+    "fields": {
+      "hint_text": "The city is surrounded by lush forests and is the capital of Veracruz state.",
+      "question": 119
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 120,
+    "fields": {
+      "hint_text": "Located in the western highlands, it is often referred to as Xela by locals.",
+      "question": 120
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 103,
+    "fields": {
+      "hint_text": "Located in western Mexico, it is the second-largest city in the country.",
+      "question": 103
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 107,
+    "fields": {
+      "hint_text": "Located on the west coast of Ireland, it is famous for its medieval streets and lively festivals.",
+      "question": 107
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 108,
+    "fields": {
+      "hint_text": "It is a UNESCO World Heritage site and known for its biodiversity.",
+      "question": 108
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 109,
+    "fields": {
+      "hint_text": "It has a long history dating back to ancient Egypt and is currently a region with political tensions.",
+      "question": 109
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 112,
+    "fields": {
+      "hint_text": "It has a unique blend of British and Mediterranean cultures.",
+      "question": 112
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 113,
+    "fields": {
+      "hint_text": "Located on the Guayas River, it is known for its waterfront Malecón.",
+      "question": 113
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 115,
+    "fields": {
+      "hint_text": "It is often considered one of the best-preserved medieval cities in Europe.",
+      "question": 115
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 116,
+    "fields": {
+      "hint_text": "Located in northern Portugal, it was designated a European Capital of Culture in 2012.",
+      "question": 116
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 121,
+    "fields": {
+      "hint_text": "It is also known for its granite quarries.",
+      "question": 121
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 122,
+    "fields": {
+      "hint_text": "It was once the capital of the Philippines.",
+      "question": 122
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 123,
+    "fields": {
+      "hint_text": "It is known for its modern art museums and the historic Schlossberg hill.",
+      "question": 123
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 124,
+    "fields": {
+      "hint_text": "It is located in the state of Uttar Pradesh, near the border with Nepal.",
+      "question": 124
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 125,
+    "fields": {
+      "hint_text": "It is a major cultural center, home to many museums and festivals.",
+      "question": 125
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 34,
+    "fields": {
+      "hint_text": "It's the capital of Spain.",
+      "question": 34
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 35,
+    "fields": {
+      "hint_text": "It's the capital of Austria and famous for its imperial palaces.",
+      "question": 35
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 36,
+    "fields": {
+      "hint_text": "This city is the capital of Peru",
+      "question": 36
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 37,
+    "fields": {
+      "hint_text": "It's the capital of Portugal.",
+      "question": 37
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 38,
+    "fields": {
+      "hint_text": "Located in southern Spain, it is known for its lively festivals.",
+      "question": 38
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 39,
+    "fields": {
+      "hint_text": "The capital of Sweden, it's famous for its innovative design and lifestyle.",
+      "question": 39
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 40,
+    "fields": {
+      "hint_text": "It's the capital of Norway and is surrounded by fjords and forests.",
+      "question": 40
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 41,
+    "fields": {
+      "hint_text": "It's the northernmost capital of a sovereign state.",
+      "question": 41
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 42,
+    "fields": {
+      "hint_text": "It's one of the most famous cities in South America, known for Carnival.",
+      "question": 42
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 43,
+    "fields": {
+      "hint_text": "This city is known for its vibrant arts scene and proximity to wine regions.",
+      "question": 43
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 44,
+    "fields": {
+      "hint_text": "Home to the Burj Khalifa, the tallest building in the world.",
+      "question": 44
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 45,
+    "fields": {
+      "hint_text": "The city is a major tourist destination and has a rich cultural diversity.",
+      "question": 45
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 46,
+    "fields": {
+      "hint_text": "It is the capital of Hungary and famous for its nightlife and history.",
+      "question": 46
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 47,
+    "fields": {
+      "hint_text": "Famous for futuristic skyscrapers and a luxurious lifestyle.",
+      "question": 47
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 48,
+    "fields": {
+      "hint_text": "This city is a cultural hub, famous for its temples and traditional Japanese architecture.",
+      "question": 48
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 49,
+    "fields": {
+      "hint_text": "It is one of the wealthiest cities in Europe.",
+      "question": 49
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 50,
+    "fields": {
+      "hint_text": "Located on Australia's east coast, it is a cultural and financial center.",
+      "question": 50
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 51,
+    "fields": {
+      "hint_text": "It is the capital of Finland and is known for its high quality of life.",
+      "question": 51
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 52,
+    "fields": {
+      "hint_text": "Located on the island of Java, it's a major economic and cultural center.",
+      "question": 52
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 53,
+    "fields": {
+      "hint_text": "This city is the heart of East Africa and a key player in conservation efforts.",
+      "question": 53
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 54,
+    "fields": {
+      "hint_text": "It's the capital of Malaysia and a major financial hub in Southeast Asia.",
+      "question": 54
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 55,
+    "fields": {
+      "hint_text": "The capital of South Korea, home to the palaces of the Joseon Dynasty.",
+      "question": 55
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 56,
+    "fields": {
+      "hint_text": "A small, glamorous city-state located on the French Riviera.",
+      "question": 56
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 57,
+    "fields": {
+      "hint_text": "Located in central Morocco, it is known for its historic medina.",
+      "question": 57
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 58,
+    "fields": {
+      "hint_text": "This city was a British colony until 1997 and has a unique 'one country, two systems' governance.",
+      "question": 58
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 59,
+    "fields": {
+      "hint_text": "This city's red-light district and coffeeshops are famous worldwide.",
+      "question": 59
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 60,
+    "fields": {
+      "hint_text": "Known for being a tax haven, it's located on the Mediterranean coast.",
+      "question": 60
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 61,
+    "fields": {
+      "hint_text": "Known for its historic landmarks and vibrant culture, this city is the capital of Mexico.",
+      "question": 61
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 62,
+    "fields": {
+      "hint_text": "This city has ancient monuments and a rich Islamic heritage.",
+      "question": 62
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 63,
+    "fields": {
+      "hint_text": "Located on the North Island, this city is New Zealand's largest city.",
+      "question": 63
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 64,
+    "fields": {
+      "hint_text": "It's located on the coast and is a hub for arts, music, and entertainment.",
+      "question": 64
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 65,
+    "fields": {
+      "hint_text": "This city is the largest in Egypt and has a long history as a cultural and intellectual center in the Arab world.",
+      "question": 65
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 66,
+    "fields": {
+      "hint_text": "This city is Morocco's economic capital and is famous for the classic movie bearing its name.",
+      "question": 66
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 5,
+    "fields": {
+      "hint_text": "It is often called 'The Big Apple.'",
+      "question": 5
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 7,
+    "fields": {
+      "hint_text": "This city is the capital of China and has been for centuries.",
+      "question": 7
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 10,
+    "fields": {
+      "hint_text": "It is the capital of Russia.",
+      "question": 10
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 31,
+    "fields": {
+      "hint_text": "This city is Peru's capital and a major port city.",
+      "question": 31
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 32,
+    "fields": {
+      "hint_text": "Located in western Morocco, it's a key cultural and historical hub.",
+      "question": 32
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 33,
+    "fields": {
+      "hint_text": "It is the largest city in Switzerland and offers beautiful lake views.",
+      "question": 33
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 73,
+    "fields": {
+      "hint_text": "Located on the Pacific coast, it is the capital of Peru.",
+      "question": 73
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 74,
+    "fields": {
+      "hint_text": "A key historical and cultural city in Morocco.",
+      "question": 74
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 76,
+    "fields": {
+      "hint_text": "Known for its museums, including the Gold Museum.",
+      "question": 76
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 79,
+    "fields": {
+      "hint_text": "The capital of Chile, it's a cultural and financial center of South America.",
+      "question": 79
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 80,
+    "fields": {
+      "hint_text": "Famous for its cable cars and progressive culture.",
+      "question": 80
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 85,
+    "fields": {
+      "hint_text": "It is one of the wealthiest cities in Europe.",
+      "question": 85
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 89,
+    "fields": {
+      "hint_text": "Known as 'The Big Apple.'",
+      "question": 89
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 67,
+    "fields": {
+      "hint_text": "Located on the coast, it has a vibrant nightlife and music scene.",
+      "question": 67
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 68,
+    "fields": {
+      "hint_text": "It's one of the oldest cities in the world with a rich ancient history.",
+      "question": 68
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 69,
+    "fields": {
+      "hint_text": "Located in Tuscany, this city boasts a rich artistic and architectural heritage.",
+      "question": 69
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 70,
+    "fields": {
+      "hint_text": "It is famous for luxurious lifestyle and futuristic architecture.",
+      "question": 70
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 71,
+    "fields": {
+      "hint_text": "This city is one of the world's most populous and is Japan's capital.",
+      "question": 71
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 72,
+    "fields": {
+      "hint_text": "Known for its rich history and modern culture, it is Germany's capital.",
+      "question": 72
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 73,
+    "fields": {
+      "hint_text": "Located on the Pacific coast, it is the capital of Peru.",
+      "question": 73
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 74,
+    "fields": {
+      "hint_text": "A key historical and cultural city in Morocco.",
+      "question": 74
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 75,
+    "fields": {
+      "hint_text": "It is one of the oldest cities in North America and the capital of the province of Quebec.",
+      "question": 75
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 76,
+    "fields": {
+      "hint_text": "Known for its museums, including the Gold Museum.",
+      "question": 76
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 77,
+    "fields": {
+      "hint_text": "A major port city with a mix of Eastern and Western influences.",
+      "question": 77
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 78,
+    "fields": {
+      "hint_text": "The third-largest city in the U.S., located on Lake Michigan.",
+      "question": 78
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 79,
+    "fields": {
+      "hint_text": "The capital of Chile, it's a cultural and financial center of South America.",
+      "question": 79
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 80,
+    "fields": {
+      "hint_text": "Famous for its cable cars and progressive culture.",
+      "question": 80
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 81,
+    "fields": {
+      "hint_text": "Famous for its canals and art history.",
+      "question": 81
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 82,
+    "fields": {
+      "hint_text": "A dynamic blend of ancient palaces and modern skyscrapers.",
+      "question": 82
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 83,
+    "fields": {
+      "hint_text": "Known for its luxury tourism and record-breaking architecture.",
+      "question": 83
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 84,
+    "fields": {
+      "hint_text": "Known for its festivals, jazz music, and vibrant food scene.",
+      "question": 84
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 85,
+    "fields": {
+      "hint_text": "It is one of the wealthiest cities in Europe.",
+      "question": 85
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 86,
+    "fields": {
+      "hint_text": "The capital of Argentina, often referred to as the 'Paris of South America.'",
+      "question": 86
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 87,
+    "fields": {
+      "hint_text": "Home to the Burj Khalifa, the tallest building in the world.",
+      "question": 87
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 88,
+    "fields": {
+      "hint_text": "The capital of the UK, it's rich in history and culture.",
+      "question": 88
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 89,
+    "fields": {
+      "hint_text": "Known as 'The Big Apple.'",
+      "question": 89
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 90,
+    "fields": {
+      "hint_text": "Near the Nile River, it has a long history stretching back millennia.",
+      "question": 90
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 91,
+    "fields": {
+      "hint_text": "Located at the head of the Oslofjord.",
+      "question": 91
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 92,
+    "fields": {
+      "hint_text": "Famous for its romantic ambiance and historical landmarks.",
+      "question": 92
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 93,
+    "fields": {
+      "hint_text": "Known for its sustainable lifestyle and bike-friendly streets.",
+      "question": 93
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 94,
+    "fields": {
+      "hint_text": "Home to the Bund and the Oriental Pearl Tower.",
+      "question": 94
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 95,
+    "fields": {
+      "hint_text": "Located on Spain's northeastern coast along the Mediterranean.",
+      "question": 95
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 96,
+    "fields": {
+      "hint_text": "Often referred to as 'Jo'burg,' it's central to the country's economy.",
+      "question": 96
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 97,
+    "fields": {
+      "hint_text": "The capital of Argentina, known as the 'Paris of South America.'",
+      "question": 97
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 98,
+    "fields": {
+      "hint_text": "Known for the Vienna Philharmonic and being the home of many composers.",
+      "question": 98
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 99,
+    "fields": {
+      "hint_text": "Known as the 'City of Sails.'",
+      "question": 99
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 100,
+    "fields": {
+      "hint_text": "Famous for its historic sites like the Hagia Sophia and the Blue Mosque.",
+      "question": 100
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 106,
+    "fields": {
+      "hint_text": "It is a UNESCO World Heritage site known for its well-preserved colonial architecture.",
+      "question": 106
+    }
+  }
+]
