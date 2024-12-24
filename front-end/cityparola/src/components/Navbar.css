@@ -128,6 +128,15 @@
   cursor: pointer;
 }
 
+.username {
+  display: flex;
+  position: relative;
+  margin-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
 .sign-out-button {
   background-color: #ff4d4d;
   color: #fff;

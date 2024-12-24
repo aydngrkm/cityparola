@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import './Navbar.css';
@@ -7,19 +8,55 @@ import AuthContext from '../context/AuthContext';
 const Navbar = ({ darkMode }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const { user, logoutUser } = useContext(AuthContext);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [username, setUsername] = useState("");
+  const [flag, setFlag] = useState(true);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+
+  useEffect(() => {
+    const getUsername = async () => {
+       try {
+            const response = await axios.get(`http://localhost:8000/api/users/${user.user_id}/`);
+            setUsername(response.data.username);
+        } catch (err) {
+            setError(err);
+        } finally {
+            setLoading(false);
+        }
+    };
+    getUsername();
+  }, []);
+
   useEffect(() => {
   }, [user]);
+
+  useEffect (() => {
+    if (flag) {
+      setFlag(false);
+    }
+  }, [flag])
 
   return (
     <nav className={`navbar ${darkMode ? 'dark' : ''}`}>
       <Link to="/" className="logo-link">
         <img src={logo} alt="Logo" className="logo" />
       </Link>
+      {user ? (
+        <div className="username">
+          <p>
+            Hello {username}
+          </p>
+        </div>
+      ) : (
+        <h2>
+          
+        </h2>
+      )}
       <div className="flex-spacer"></div>
 
       <button 

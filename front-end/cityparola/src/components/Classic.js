@@ -24,6 +24,7 @@ const Classic = ({ darkMode }) => {
     const [hintAvailable, setHintAvailable] = useState(3);
     const [hints, setHints] = useState([]);
     const [showHints, setShowHints] = useState(false);
+    const [isHintUsed, setIsHintUsed] = useState(false);
     const navigate = useNavigate();
 
     const { user } = useContext(AuthContext);
@@ -119,6 +120,7 @@ const Classic = ({ darkMode }) => {
         }
         setHints([]);
         setShowHints(false);
+        setIsHintUsed(false);
     };
 
     const handleKeyDown = (event) => {
@@ -178,7 +180,7 @@ const Classic = ({ darkMode }) => {
     };
 
     const handleGetHint = async () => {
-        if (hintAvailable > 0) {
+        if (hintAvailable > 0 && !isHintUsed) {
             try {
                 const response = await axios.post(`http://localhost:8000/api/get-hint/`, {
                     question_id: modifiableQuestions[currentQuestionIndex].question.id
@@ -190,6 +192,7 @@ const Classic = ({ darkMode }) => {
             } catch (err) {
                 console.error("Error fetching hint:", err);
             }
+            setIsHintUsed(true);
         }
     };
 

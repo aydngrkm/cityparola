@@ -11,7 +11,7 @@ import Classic from './components/Classic';
 import Survival from './components/Survival';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
-import Leaderboard from './components/Leaderboad';
+import Leaderboard from './components/Leaderboard';
 import PrivateRouter from './utils/PrivateRouter';
 import logo from './assets/logo.png';
 import backgroundImage from './assets/background.jpeg';
