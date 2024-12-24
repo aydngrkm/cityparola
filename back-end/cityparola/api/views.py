@@ -255,12 +255,12 @@ class CheckAnswerView(APIView):
 
 # user only?
 class GetLeaderboard(APIView):
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     def get(self, request, format=None):
-        #current_user = request.user
+        current_user = request.user
         all_users = User.objects.order_by('-score')
-        #user_rank = list(all_users).index(current_user) + 1
+        user_rank = list(all_users).index(current_user) + 1
 
         leaderboard = []
         
@@ -269,8 +269,8 @@ class GetLeaderboard(APIView):
 
         data = {
             "leaderboard": leaderboard,
-            #"current_user_rank": user_rank,
-            #"current_user_score": current_user.score,
+            "current_user_rank": user_rank,
+            "current_user_score": current_user.score,
         }
         return Response(data)
     
