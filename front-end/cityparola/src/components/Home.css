@@ -86,6 +86,36 @@ html, body {
   transition: all 0.2s ease;
 }
 
+.feedback-link-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.feedback-link-container:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.feedback-link-container:not(:hover) {
+  transition: all 0.2s ease;
+}
+
+.feedback-link {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.feedback-link:hover {
+  color: #fff;
+}
+
 .continent-selector {
   margin: 15px 0 0 15px;
   width: 200px;

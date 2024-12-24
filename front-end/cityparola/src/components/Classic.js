@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Modal from './Modal';
 import './Classic.css';
 import backbtn from '../assets/back_button.png';
 import timerlogo from '../assets/timer.png';
+import hintIcon from '../assets/hint.png';
+import AuthContext from '../context/AuthContext';
 
 const Classic = ({ darkMode }) => {
     const [timer, setTimer] = useState(300);
@@ -19,7 +21,13 @@ const Classic = ({ darkMode }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [hintAvailable, setHintAvailable] = useState(3);
+    const [hints, setHints] = useState([]);
+    const [showHints, setShowHints] = useState(false);
     const navigate = useNavigate();
+
+    const { user } = useContext(AuthContext);
+    const userId = user ? user.user_id : null;
 
     useEffect(() => {
         const fetchData = async () => {
@@ -48,8 +56,9 @@ const Classic = ({ darkMode }) => {
     useEffect(() => {
         if (timer === 0) {
             setIsGameOver(true);
+            updateUserScore(score);
         }
-    }, [timer]);
+    }, [timer, score]);
 
     const writeTime = (time) => {
         const minute = Math.floor(time / 60);
@@ -106,7 +115,10 @@ const Classic = ({ darkMode }) => {
             setCurrentQuestionIndex(prevIndex => prevIndex + 1);
         } else {
             setIsGameOver(true);
+            updateUserScore(score);
         }
+        setHints([]);
+        setShowHints(false);
     };
 
     const handleKeyDown = (event) => {
@@ -145,6 +157,40 @@ const Classic = ({ darkMode }) => {
         setCurrentQuestionIndex(0);
         setInputValue("");
         setModifiableQuestions(questions);
+        setHintAvailable(3);
+        setHints([]);
+    };
+
+    const updateUserScore = async (newScore) => {
+        try {
+            const response = await axios.get(`http://localhost:8000/api/users/${userId}/`);
+            const user = response.data;
+
+            if (newScore > user.score) {
+                await axios.put(`http://localhost:8000/api/users/${userId}/`, {
+                    ...user,
+                    score: newScore
+                });
+            }
+        } catch (err) {
+            console.error("Error updating user score:", err);
+        }
+    };
+
+    const handleGetHint = async () => {
+        if (hintAvailable > 0) {
+            try {
+                const response = await axios.post(`http://localhost:8000/api/get-hint/`, {
+                    question_id: modifiableQuestions[currentQuestionIndex].question.id
+                });
+                setHints(prevHints => [...prevHints, response.data.hint_text]);
+                setHintAvailable(prev => prev - 1);
+                setShowHints(true);
+                console.log(`Question ID: ${modifiableQuestions[currentQuestionIndex].question.id}, Hint: ${response.data.hint}`);
+            } catch (err) {
+                console.error("Error fetching hint:", err);
+            }
+        }
     };
 
     return (
@@ -195,6 +241,24 @@ const Classic = ({ darkMode }) => {
                     </div>
                 </div>
             )}
+
+            {showHints && (
+                <div className="hints-display">
+                    <h3>Hints:</h3>
+                    {hints.map((hint, index) => (
+                        <div key={index} className="hint-box">
+                            <p>{hint}</p>
+                        </div>
+                    ))}
+                </div>
+            )}
+
+            <div className='hint-container'>
+                <button className='hint-button' onClick={handleGetHint}>
+                    <img src={hintIcon} alt='Hint' className='hint-icon' />
+                </button>
+                <div className='hint-remaining'>{hintAvailable}</div>
+            </div>
 
             {isGameOver && (
                 <div className='game-over-container'>

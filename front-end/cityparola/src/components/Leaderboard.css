@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .leaderboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .leaderboard-box {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s ease;
+    width: 50%;
+    height: auto;
+  }
+  
+  .leaderboard-box.light {
+    background-color: rgba(238, 238, 238, 0.8);
+  }
+  
+  .leaderboard-box.dark {
+    background-color: rgba(68, 68, 68, 0.8);
+  }
+  
+  .leaderboard-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .leaderboard-list {
+    height: 300px;
+    overflow-y: scroll;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* scrollbar-width: thin; */
+  }
+  
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  .leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .leaderboard-item:last-child {
+    border-bottom: none;
+  }
+  
+  .leaderboard-rank {
+    font-size: 18px;
+    width: 8%;
+    text-align: left;
+  }
+  
+  .leaderboard-username {
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .leaderboard-score {
+    font-size: 18px;
+    width: 10%;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: red;
+  }
+  
+  .leaderboard-item span {
+    padding: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .leaderboard-box {
+      width: 70%;
+    }
+  }
+  

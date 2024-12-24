@@ -163,6 +163,72 @@ html, body {
     color: #ffffff;
 }
 
+.hint-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.hint-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 204, 0, 0.7);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hint-button:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+.hint-button:not(:hover) {
+    transition: all 0.2s ease;
+}
+
+.hint-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.hint-remaining {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background-color: rgba(255, 204, 0, 0.7);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.hints-display {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hint-box {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 
 @keyframes correct-flash {
     0% {

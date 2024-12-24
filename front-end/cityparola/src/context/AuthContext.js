@@ -37,7 +37,8 @@ export const AuthProvider = ({ children }) => {
 
       if (response.status === 200 && response.data && response.data.access) {
         setAuthTokens(response.data);
-        setUser(jwtDecode(response.data.access));
+        const decodedUser = jwtDecode(response.data.access);
+        setUser(decodedUser);
       } else {
         alert('Invalid login credentials or unexpected response');
         setAuthTokens(null);

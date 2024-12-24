@@ -47,6 +47,9 @@ const Home = ({ toggleSettings, darkMode }) => {
         </div>
       </div>
     </div>
+    <div className="feedback-link-container">
+        <a href="/feedback" className="feedback-link">Give Feedback</a>
+      </div>
     </>
   );
 };

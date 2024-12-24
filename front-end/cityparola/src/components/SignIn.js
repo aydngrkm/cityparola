@@ -44,8 +44,10 @@ const SignIn = ({ darkMode }) => {
 
       if (response.status === 200 && response.data && response.data.access) {
         setAuthTokens(response.data);
-        console.log(response.data);
-        setUser(jwtDecode(response.data.access));
+        const decodedUser = jwtDecode(response.data.access);
+        setUser(decodedUser); 
+        console.log(decodedUser);
+
         navigate('/');
       } else {
         alert('Invalid login credentials or unexpected response');
