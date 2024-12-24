@@ -56,11 +56,9 @@ class HintSerializer(serializers.ModelSerializer):
         fields = ['id', 'hint_text', 'question']
 
 class FeedbackSerializer(serializers.ModelSerializer):
-    question = TestQuestionSerializer()
-
     class Meta:
         model = Feedback
-        fields = ['id', 'body', 'created_at', 'question']
+        fields = ['id', 'body', 'created_at']
 
 
 class DefaultTestSerializer(serializers.Serializer):
