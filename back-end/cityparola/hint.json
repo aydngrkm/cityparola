@@ -1,0 +1,1202 @@
+[
+  {
+    "model": "api.hint",
+    "pk": 1,
+    "fields": {
+      "hint_text": "This city is in the Netherlands and famous for canals.",
+      "question": 1
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 2,
+    "fields": {
+      "hint_text": "This city is the capital of a country on the Aegean Sea.",
+      "question": 2
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 3,
+    "fields": {
+      "hint_text": "This city is in central Turkiye, known for its cold winters.",
+      "question": 3
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 4,
+    "fields": {
+      "hint_text": "This city is part of a federation of seven emirates.",
+      "question": 4
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 5,
+    "fields": {
+      "hint_text": "This city is in northern New Zealand, set over volcanic hills.",
+      "question": 5
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 6,
+    "fields": {
+      "hint_text": "This city is the capital of Ghana, on the Gulf of Guinea.",
+      "question": 6
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 7,
+    "fields": {
+      "hint_text": "This city is in northeastern Spain, on the Mediterranean coast.",
+      "question": 7
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 8,
+    "fields": {
+      "hint_text": "This city is the capital of Germany, rebuilt after WWII.",
+      "question": 8
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 9,
+    "fields": {
+      "hint_text": "This city is the capital of Iraq, located by the Tigris River.",
+      "question": 9
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 10,
+    "fields": {
+      "hint_text": "This city is the capital of Thailand, known for street food.",
+      "question": 10
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 11,
+    "fields": {
+      "hint_text": "This city is the capital of Argentina, famous for tango.",
+      "question": 11
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 12,
+    "fields": {
+      "hint_text": "This city is the capital of Belgium, home to EU offices.",
+      "question": 12
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 13,
+    "fields": {
+      "hint_text": "This city is the capital of Egypt, near the Nile River.",
+      "question": 13
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 14,
+    "fields": {
+      "hint_text": "This city is in southeast Mexico, on the Yucatan Peninsula.",
+      "question": 14
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 15,
+    "fields": {
+      "hint_text": "This city is in South Africa, beneath Table Mountain.",
+      "question": 15
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 16,
+    "fields": {
+      "hint_text": "This city is in western Morocco, facing the Atlantic Ocean.",
+      "question": 16
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 17,
+    "fields": {
+      "hint_text": "This city is in the USA, by Lake Michigan and famous for pizza.",
+      "question": 17
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 18,
+    "fields": {
+      "hint_text": "This city is the capital of Denmark, on coastal islands.",
+      "question": 18
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 19,
+    "fields": {
+      "hint_text": "This city is in the UAE, known for ultramodern skyscrapers.",
+      "question": 19
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 20,
+    "fields": {
+      "hint_text": "This city is the capital of Syria, considered one of the oldest.",
+      "question": 20
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 21,
+    "fields": {
+      "hint_text": "This city is in Texas, notable for an NFL franchise.",
+      "question": 21
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 22,
+    "fields": {
+      "hint_text": "This city is the capital of Senegal, on the Cape Verde Peninsula.",
+      "question": 22
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 23,
+    "fields": {
+      "hint_text": "This city is the capital of Ireland, known for literary pubs.",
+      "question": 23
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 24,
+    "fields": {
+      "hint_text": "This city is in northern India, with a historic Red Fort.",
+      "question": 24
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 25,
+    "fields": {
+      "hint_text": "This city is the capital of Scotland, centered on a castle rock.",
+      "question": 25
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 26,
+    "fields": {
+      "hint_text": "This city is in the southern Netherlands, known for technology.",
+      "question": 26
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 27,
+    "fields": {
+      "hint_text": "This city is in western Germany, associated with coal mining.",
+      "question": 27
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 28,
+    "fields": {
+      "hint_text": "This city is in the southwestern USA, near the Mexican border.",
+      "question": 28
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 29,
+    "fields": {
+      "hint_text": "This city is in Uganda, located on Lake Victoria's shores.",
+      "question": 29
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 30,
+    "fields": {
+      "hint_text": "This city is in southern Israel, popular for Red Sea resorts.",
+      "question": 30
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 31,
+    "fields": {
+      "hint_text": "This city is in central Italy, famed for Renaissance art.",
+      "question": 31
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 32,
+    "fields": {
+      "hint_text": "This city in Germany is a leading financial hub on the Main River.",
+      "question": 32
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 33,
+    "fields": {
+      "hint_text": "This city is on Japan's Kyushu Island, known for food stalls.",
+      "question": 33
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 34,
+    "fields": {
+      "hint_text": "This city is in North Dakota, associated with a 1996 film.",
+      "question": 34
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 35,
+    "fields": {
+      "hint_text": "This city is in northern Morocco, known for tanneries.",
+      "question": 35
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 36,
+    "fields": {
+      "hint_text": "This city is in northeastern Brazil, known for beaches.",
+      "question": 36
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 37,
+    "fields": {
+      "hint_text": "This Swiss city hosts many UN agencies by Lake Geneva.",
+      "question": 37
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 38,
+    "fields": {
+      "hint_text": "This city is in southern China, once called Canton.",
+      "question": 38
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 39,
+    "fields": {
+      "hint_text": "This city is in northern Poland, known for shipyards.",
+      "question": 39
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 40,
+    "fields": {
+      "hint_text": "This city is in Scotland, on the River Clyde with Victorian buildings.",
+      "question": 40
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 41,
+    "fields": {
+      "hint_text": "This city is the capital of Guatemala, near Mayan sites.",
+      "question": 41
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 42,
+    "fields": {
+      "hint_text": "This Indian region is famous for beaches and Portuguese heritage.",
+      "question": 42
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 43,
+    "fields": {
+      "hint_text": "This city is the capital of Finland, on the Gulf of Finland.",
+      "question": 43
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 44,
+    "fields": {
+      "hint_text": "This city is the capital of Cuba, noted for classic cars.",
+      "question": 44
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 45,
+    "fields": {
+      "hint_text": "This city is in northern Germany, a major port on the Elbe.",
+      "question": 45
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 46,
+    "fields": {
+      "hint_text": "This city is in Hawaii, known for Waikiki Beach.",
+      "question": 46
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 47,
+    "fields": {
+      "hint_text": "This city in Texas hosts NASA's Johnson Space Center.",
+      "question": 47
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 48,
+    "fields": {
+      "hint_text": "This city is a special region of China, on the Pearl River Delta.",
+      "question": 48
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 49,
+    "fields": {
+      "hint_text": "This city spans two continents in northwestern Turkiye.",
+      "question": 49
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 50,
+    "fields": {
+      "hint_text": "This city is the capital of Pakistan, at the base of Margalla Hills.",
+      "question": 50
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 51,
+    "fields": {
+      "hint_text": "This city is in the Scottish Highlands, near Loch Ness.",
+      "question": 51
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 52,
+    "fields": {
+      "hint_text": "This city is in Indiana, famous for a 500-mile race.",
+      "question": 52
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 53,
+    "fields": {
+      "hint_text": "This city is on the Aegean coast of Turkiye, featuring a Clock Tower.",
+      "question": 53
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 54,
+    "fields": {
+      "hint_text": "This city is in eastern Russia, near Lake Baikal.",
+      "question": 54
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 55,
+    "fields": {
+      "hint_text": "This city is the capital of Indonesia, on the island of Java.",
+      "question": 55
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 56,
+    "fields": {
+      "hint_text": "This city is in South Africa, originally built on gold mines.",
+      "question": 56
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 57,
+    "fields": {
+      "hint_text": "This city is in the Middle East, holy to three major faiths.",
+      "question": 57
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 58,
+    "fields": {
+      "hint_text": "This city in Saudi Arabia lies on the Red Sea, near Mecca.",
+      "question": 58
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 59,
+    "fields": {
+      "hint_text": "This city is in Shandong, China, known for natural springs.",
+      "question": 59
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 60,
+    "fields": {
+      "hint_text": "This city is the capital of Alaska, near the Mendenhall Glacier.",
+      "question": 60
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 61,
+    "fields": {
+      "hint_text": "This city is the capital of Kuwait, on the Persian Gulf.",
+      "question": 61
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 62,
+    "fields": {
+      "hint_text": "This city is in Japan, renowned for temples and geishas.",
+      "question": 62
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 63,
+    "fields": {
+      "hint_text": "This city is in southern Pakistan, a major Arabian Sea port.",
+      "question": 63
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 64,
+    "fields": {
+      "hint_text": "This city is the capital of Uganda, built on seven hills.",
+      "question": 64
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 65,
+    "fields": {
+      "hint_text": "This city is the capital of Nepal, in the Kathmandu Valley.",
+      "question": 65
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 66,
+    "fields": {
+      "hint_text": "This city is the capital of Jamaica, on its southeastern coast.",
+      "question": 66
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 67,
+    "fields": {
+      "hint_text": "This city is the capital of the UK, on the River Thames.",
+      "question": 67
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 68,
+    "fields": {
+      "hint_text": "This city is the capital of Portugal, known for tram rides.",
+      "question": 68
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 69,
+    "fields": {
+      "hint_text": "This city is in Pakistan, famed for its walled historical core.",
+      "question": 69
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 70,
+    "fields": {
+      "hint_text": "This city is in southern California, famed for Hollywood.",
+      "question": 70
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 71,
+    "fields": {
+      "hint_text": "This city is in southwestern Nigeria, a major metropolis.",
+      "question": 71
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 72,
+    "fields": {
+      "hint_text": "This city is in eastern France, known for its culinary arts.",
+      "question": 72
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 73,
+    "fields": {
+      "hint_text": "This city is Spain's capital, located in the center of the country.",
+      "question": 73
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 74,
+    "fields": {
+      "hint_text": "This city is in northern Italy, leading in fashion and design.",
+      "question": 74
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 75,
+    "fields": {
+      "hint_text": "This city is in western India, once called Bombay.",
+      "question": 75
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 76,
+    "fields": {
+      "hint_text": "This city is the capital of the Philippines, known for jeepneys.",
+      "question": 76
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 77,
+    "fields": {
+      "hint_text": "This city is in Canada (Quebec), known for a large francophone population.",
+      "question": 77
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 78,
+    "fields": {
+      "hint_text": "This city is the capital of Oman, on the Gulf of Oman.",
+      "question": 78
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 79,
+    "fields": {
+      "hint_text": "This city is the capital of Kenya, with a national park inside its borders.",
+      "question": 79
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 80,
+    "fields": {
+      "hint_text": "This city is in southern Italy, near Mount Vesuvius.",
+      "question": 80
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 81,
+    "fields": {
+      "hint_text": "This city is in Japan, located between Tokyo and Osaka.",
+      "question": 81
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 82,
+    "fields": {
+      "hint_text": "This city is on the French Riviera, known for pebble beaches.",
+      "question": 82
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 83,
+    "fields": {
+      "hint_text": "This city is the capital of Mauritania, near the Sahara.",
+      "question": 83
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 84,
+    "fields": {
+      "hint_text": "This city is the capital of the Bahamas, on New Providence Island.",
+      "question": 84
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 85,
+    "fields": {
+      "hint_text": "This city is in Japan's Kansai region, near Kyoto.",
+      "question": 85
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 86,
+    "fields": {
+      "hint_text": "This city is the capital of Norway, on the Oslofjord.",
+      "question": 86
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 87,
+    "fields": {
+      "hint_text": "This city is the capital of Canada, located in eastern Ontario.",
+      "question": 87
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 88,
+    "fields": {
+      "hint_text": "This city is the capital of Burkina Faso, in West Africa.",
+      "question": 88
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 89,
+    "fields": {
+      "hint_text": "This city is in northwestern Algeria, near the Mediterranean.",
+      "question": 89
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 90,
+    "fields": {
+      "hint_text": "This city is in Florida, USA, famous for theme parks.",
+      "question": 90
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 91,
+    "fields": {
+      "hint_text": "This city is the capital of France, famous for the Seine River.",
+      "question": 91
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 92,
+    "fields": {
+      "hint_text": "This city is in Western Australia, known for its isolation.",
+      "question": 92
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 93,
+    "fields": {
+      "hint_text": "This city is in northern Portugal, along the Douro River.",
+      "question": 93
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 94,
+    "fields": {
+      "hint_text": "This city is the capital of the Czech Republic, in Central Europe.",
+      "question": 94
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 95,
+    "fields": {
+      "hint_text": "This city is the capital of Cambodia, near the Mekong River.",
+      "question": 95
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 96,
+    "fields": {
+      "hint_text": "This city in South Africa is one of three national capitals.",
+      "question": 96
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 97,
+    "fields": {
+      "hint_text": "This city is the capital of Ecuador, in the Andes Mountains.",
+      "question": 97
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 98,
+    "fields": {
+      "hint_text": "This city is in eastern Canada, known for its fortified old town.",
+      "question": 98
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 99,
+    "fields": {
+      "hint_text": "This city in eastern China is famous for Tsingtao beer.",
+      "question": 99
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 100,
+    "fields": {
+      "hint_text": "This city in Guatemala is also called Xela, surrounded by volcanoes.",
+      "question": 100
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 101,
+    "fields": {
+      "hint_text": "This city is in central Mexico, known for colonial plazas.",
+      "question": 101
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 102,
+    "fields": {
+      "hint_text": "This city in Iran is a holy site for religious pilgrimage.",
+      "question": 102
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 103,
+    "fields": {
+      "hint_text": "This city is the capital of Italy, called the Eternal City.",
+      "question": 103
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 104,
+    "fields": {
+      "hint_text": "This city is the capital of Iceland, famed for geothermal spas.",
+      "question": 104
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 105,
+    "fields": {
+      "hint_text": "This city is in Brazil, well-known for a huge beachfront statue.",
+      "question": 105
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 106,
+    "fields": {
+      "hint_text": "This city is the capital of Saudi Arabia, in the center of the country.",
+      "question": 106
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 107,
+    "fields": {
+      "hint_text": "This city is in the Netherlands, Europe's busiest seaport.",
+      "question": 107
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 108,
+    "fields": {
+      "hint_text": "This city is the capital of North Carolina, part of Research Triangle.",
+      "question": 108
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 109,
+    "fields": {
+      "hint_text": "This city is in Australia, known for its famous Opera House.",
+      "question": 109
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 110,
+    "fields": {
+      "hint_text": "This city is the capital of South Korea, on the Han River.",
+      "question": 110
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 111,
+    "fields": {
+      "hint_text": "This city is in eastern China, known for its futuristic skyline.",
+      "question": 111
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 112,
+    "fields": {
+      "hint_text": "This city is a city-state in Southeast Asia, near Malaysia.",
+      "question": 112
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 113,
+    "fields": {
+      "hint_text": "This city is the capital of Sweden, spread across multiple islands.",
+      "question": 113
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 114,
+    "fields": {
+      "hint_text": "This city in Brazil is a huge financial center on Paulista Avenue.",
+      "question": 114
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 115,
+    "fields": {
+      "hint_text": "This city is Japan's capital, known for massive metropolitan sprawl.",
+      "question": 115
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 116,
+    "fields": {
+      "hint_text": "This city is in Ontario, Canada, by Lake Ontario.",
+      "question": 116
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 117,
+    "fields": {
+      "hint_text": "This city is the capital of Iran, located near the Alborz Mountains.",
+      "question": 117
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 118,
+    "fields": {
+      "hint_text": "This city is in northern Italy, known for the Shroud and Fiat.",
+      "question": 118
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 119,
+    "fields": {
+      "hint_text": "This city is in southwestern France, called La Ville Rose.",
+      "question": 119
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 120,
+    "fields": {
+      "hint_text": "This city is the capital of Georgia, in the Caucasus region.",
+      "question": 120
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 121,
+    "fields": {
+      "hint_text": "This city is the capital of Mongolia, near the Gobi Desert.",
+      "question": 121
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 122,
+    "fields": {
+      "hint_text": "This city in Sweden is north of Stockholm, with a historic university.",
+      "question": 122
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 123,
+    "fields": {
+      "hint_text": "This city in northern Sweden is known for culture and birch avenues.",
+      "question": 123
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 124,
+    "fields": {
+      "hint_text": "This city is in southeastern Brazil, by the Uberabinha River.",
+      "question": 124
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 125,
+    "fields": {
+      "hint_text": "This city is in the Netherlands, known for its Dom Tower.",
+      "question": 125
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 126,
+    "fields": {
+      "hint_text": "This city in Russia is near the Ural Mountains, famous for oil refining.",
+      "question": 126
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 127,
+    "fields": {
+      "hint_text": "This city is the capital of Austria, on the Danube River.",
+      "question": 127
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 128,
+    "fields": {
+      "hint_text": "This city is on Canada's Pacific coast, near the Coast Mountains.",
+      "question": 128
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 129,
+    "fields": {
+      "hint_text": "This city is in northeastern Italy, built on a lagoon.",
+      "question": 129
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 130,
+    "fields": {
+      "hint_text": "This city is in eastern Spain, known for paella.",
+      "question": 130
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 131,
+    "fields": {
+      "hint_text": "This city is in eastern Mexico, on the Gulf of Mexico.",
+      "question": 131
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 132,
+    "fields": {
+      "hint_text": "This city is the capital of Liechtenstein, overlooking the Rhine.",
+      "question": 132
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 133,
+    "fields": {
+      "hint_text": "This city is the capital of Poland, rebuilt after WWII.",
+      "question": 133
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 134,
+    "fields": {
+      "hint_text": "This city is the capital of New Zealand, known for wind and film studios.",
+      "question": 134
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 135,
+    "fields": {
+      "hint_text": "This city is the capital of the USA, on the Potomac River.",
+      "question": 135
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 136,
+    "fields": {
+      "hint_text": "This city is in central China, along the Yangtze River.",
+      "question": 136
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 137,
+    "fields": {
+      "hint_text": "This city is the capital of Curacao, with colorful colonial buildings.",
+      "question": 137
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 138,
+    "fields": {
+      "hint_text": "This city is in Manitoba, Canada, at a river confluence.",
+      "question": 138
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 139,
+    "fields": {
+      "hint_text": "This city was an ancient Chinese capital, home to Terracotta Army.",
+      "question": 139
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 140,
+    "fields": {
+      "hint_text": "This city is on China's southeast coast, near Gulangyu Island.",
+      "question": 140
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 141,
+    "fields": {
+      "hint_text": "This city in Mexico is known for coffee and called the City of Flowers.",
+      "question": 141
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 142,
+    "fields": {
+      "hint_text": "This city in China is in Qinghai province, gateway to Tibetan Plateau.",
+      "question": 142
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 143,
+    "fields": {
+      "hint_text": "This city in Hubei, China, has an ancient wall on the Han River.",
+      "question": 143
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 144,
+    "fields": {
+      "hint_text": "This city is in Jiangsu, China, known for terracotta figures.",
+      "question": 144
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 145,
+    "fields": {
+      "hint_text": "This city is south of Tokyo, famous for a large Chinatown.",
+      "question": 145
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 146,
+    "fields": {
+      "hint_text": "This city is the capital of Cameroon, built on seven hills.",
+      "question": 146
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 147,
+    "fields": {
+      "hint_text": "This city in Myanmar was the colonial capital, with a golden pagoda.",
+      "question": 147
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 148,
+    "fields": {
+      "hint_text": "This city is the capital of Armenia, known for pink stone buildings.",
+      "question": 148
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 149,
+    "fields": {
+      "hint_text": "This city is in Russia's Ural region, bridging Europe and Asia.",
+      "question": 149
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 150,
+    "fields": {
+      "hint_text": "This city is in Canada's Northwest Territories, near Great Slave Lake.",
+      "question": 150
+    }
+  }
+]
