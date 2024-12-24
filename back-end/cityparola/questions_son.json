@@ -436,7 +436,7 @@
     "pk": 37,
     "fields": {
       "question_text": "Which city is known for its colorful architecture, the Belem Tower, and its famous custard tarts?",
-      "city": 141
+      "city": 68
     }
   },
   {
@@ -620,7 +620,7 @@
     "pk": 60,
     "fields": {
       "question_text": "Which tiny city-state is famous for its wealth, luxury casinos, and hosting the Grand Prix?",
-      "city": 73
+      "city": 159
     }
   },
   {
@@ -1005,6 +1005,46 @@
       "fields":{
           "question_text": "Which city has been known by several names, including Byzantium and Constantinople, and straddles both Europe and Asia?",
           "city": 49
+      }
+  },
+  {
+      "model": "api.question",
+      "pk": 170,
+      "fields":{
+          "question_text": "Which city in the Netherlands is known for its historic canals and the Dom Tower, the tallest church tower in the country?",
+          "city": 125
+      }
+  },
+  {
+      "model": "api.question",
+      "pk": 171,
+      "fields":{
+          "question_text": "Which city, the capital of the United States, is famous for landmarks like the White House and the Lincoln Memorial?",
+          "city": 135
+      }
+  },
+  {
+      "model": "api.question",
+      "pk": 172,
+      "fields":{
+          "question_text": "From which city did the COVID-19 virus outbreak originate?",
+          "city": 136
+      }
+  },
+  {
+      "model": "api.question",
+      "pk": 173,
+      "fields":{
+          "question_text": "Which city in Japan is famous for its modern port, the Landmark Tower, and the Cup Noodles Museum?",
+          "city": 145
+      }
+  },
+  {
+      "model": "api.question",
+      "pk": 174,
+      "fields":{
+          "question_text": "Which city in Russia, located in the Ural Mountains, is known as the site where the last Russian tsar was executed?",
+          "city": 149
       }
   }
 ]

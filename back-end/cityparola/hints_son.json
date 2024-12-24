@@ -1038,5 +1038,46 @@
       "hint_text": "It is a UNESCO World Heritage site known for its well-preserved colonial architecture.",
       "question": 106
     }
+  },
+  {
+    "model": "api.hint",
+    "pk": 170,
+    "fields": {
+      "hint_text": "It is located in the heart of the Netherlands and is home to one of the country's oldest universities.",
+      "question": 170
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 171,
+    "fields": {
+      "hint_text": "It is named after the first President of the United States.",
+      "question": 171
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 172,
+    "fields": {
+      "hint_text": "The city is located in China.",
+      "question": 172
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 173,
+    "fields": {
+      "hint_text": "It is located just south of Tokyo and is one of Japan's largest cities.",
+      "question": 173
+    }
+  },
+  {
+    "model": "api.hint",
+    "pk": 174,
+    "fields": {
+      "hint_text": "It is named after Catherine the Great and serves as a gateway between Europe and Asia.",
+      "question": 174
+    }
   }
+  
 ]

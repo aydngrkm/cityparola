@@ -1,1442 +1,674 @@
 [
-    {
-      "model": "api.city",
-      "pk": 1,
-      "fields": {
-        "name": "Amsterdam",
-        "country": 126
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 2,
-      "fields": {
-        "name": "Athens",
-        "country": 67
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 3,
-      "fields": {
-        "name": "Ankara",
-        "country": 180
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 4,
-      "fields": {
-        "name": "Abu Dhabi",
-        "country": 185
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 5,
-      "fields": {
-        "name": "Auckland",
-        "country": 127
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 6,
-      "fields": {
-        "name": "Accra",
-        "country": 66
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 7,
-      "fields": {
-        "name": "Barcelona",
-        "country": 164
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 8,
-      "fields": {
-        "name": "Berlin",
-        "country": 65
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 9,
-      "fields": {
-        "name": "Baghdad",
-        "country": 80
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 10,
-      "fields": {
-        "name": "Bangkok",
-        "country": 174
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 11,
-      "fields": {
-        "name": "Buenos Aires",
-        "country": 7
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 12,
-      "fields": {
-        "name": "Brussels",
-        "country": 17
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 13,
-      "fields": {
-        "name": "Cairo",
-        "country": 52
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 14,
-      "fields": {
-        "name": "Cancun",
-        "country": 114
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 15,
-      "fields": {
-        "name": "Cape Town",
-        "country": 162
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 16,
-      "fields": {
-        "name": "Casablanca",
-        "country": 120
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 17,
-      "fields": {
-        "name": "Chicago",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 18,
-      "fields": {
-        "name": "Copenhagen",
-        "country": 47
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 19,
-      "fields": {
-        "name": "Dubai",
-        "country": 185
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 20,
-      "fields": {
-        "name": "Damascus",
-        "country": 170
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 21,
-      "fields": {
-        "name": "Dallas",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 22,
-      "fields": {
-        "name": "Dakar",
-        "country": 153
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 23,
-      "fields": {
-        "name": "Dublin",
-        "country": 81
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 24,
-      "fields": {
-        "name": "Delhi",
-        "country": 77
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 25,
-      "fields": {
-        "name": "Edinburgh",
-        "country": 186
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 26,
-      "fields": {
-        "name": "Eindhoven",
-        "country": 126
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 27,
-      "fields": {
-        "name": "Essen",
-        "country": 65
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 28,
-      "fields": {
-        "name": "El Paso",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 29,
-      "fields": {
-        "name": "Entebbe",
-        "country": 183
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 30,
-      "fields": {
-        "name": "Eilat",
-        "country": 82
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 31,
-      "fields": {
-        "name": "Florence",
-        "country": 83
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 32,
-      "fields": {
-        "name": "Frankfurt",
-        "country": 65
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 33,
-      "fields": {
-        "name": "Fukuoka",
-        "country": 85
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 34,
-      "fields": {
-        "name": "Fargo",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 35,
-      "fields": {
-        "name": "Fes",
-        "country": 120
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 36,
-      "fields": {
-        "name": "Fortaleza",
-        "country": 24
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 37,
-      "fields": {
-        "name": "Geneva",
-        "country": 169
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 38,
-      "fields": {
-        "name": "Guangzhou",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 39,
-      "fields": {
-        "name": "Gdansk",
-        "country": 140
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 40,
-      "fields": {
-        "name": "Glasgow",
-        "country": 186
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 41,
-      "fields": {
-        "name": "Guatemala City",
-        "country": 69
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 42,
-      "fields": {
-        "name": "Goa",
-        "country": 77
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 43,
-      "fields": {
-        "name": "Helsinki",
-        "country": 60
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 44,
-      "fields": {
-        "name": "Havana",
-        "country": 44
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 45,
-      "fields": {
-        "name": "Hamburg",
-        "country": 65
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 46,
-      "fields": {
-        "name": "Honolulu",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 47,
-      "fields": {
-        "name": "Houston",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 48,
-      "fields": {
-        "name": "Hong Kong",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 49,
-      "fields": {
-        "name": "Istanbul",
-        "country": 180
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 50,
-      "fields": {
-        "name": "Islamabad",
-        "country": 133
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 51,
-      "fields": {
-        "name": "Inverness",
-        "country": 186
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 52,
-      "fields": {
-        "name": "Indianapolis",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 53,
-      "fields": {
-        "name": "Izmir",
-        "country": 180
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 54,
-      "fields": {
-        "name": "Irkutsk",
-        "country": 144
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 55,
-      "fields": {
-        "name": "Jakarta",
-        "country": 78
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 56,
-      "fields": {
-        "name": "Johannesburg",
-        "country": 162
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 57,
-      "fields": {
-        "name": "Jerusalem",
-        "country": 82
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 58,
-      "fields": {
-        "name": "Jeddah",
-        "country": 152
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 59,
-      "fields": {
-        "name": "Jinan",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 60,
-      "fields": {
-        "name": "Juneau",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 61,
-      "fields": {
-        "name": "Kuwait City",
-        "country": 93
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 62,
-      "fields": {
-        "name": "Kyoto",
-        "country": 85
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 63,
-      "fields": {
-        "name": "Karachi",
-        "country": 133
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 64,
-      "fields": {
-        "name": "Kampala",
-        "country": 183
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 65,
-      "fields": {
-        "name": "Kathmandu",
-        "country": 125
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 66,
-      "fields": {
-        "name": "Kingston",
-        "country": 84
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 67,
-      "fields": {
-        "name": "London",
-        "country": 186
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 68,
-      "fields": {
-        "name": "Lisbon",
-        "country": 141
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 69,
-      "fields": {
-        "name": "Lahore",
-        "country": 133
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 70,
-      "fields": {
-        "name": "Los Angeles",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 71,
-      "fields": {
-        "name": "Lagos",
-        "country": 130
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 72,
-      "fields": {
-        "name": "Lyon",
-        "country": 61
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 73,
-      "fields": {
-        "name": "Madrid",
-        "country": 164
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 74,
-      "fields": {
-        "name": "Milan",
-        "country": 83
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 75,
-      "fields": {
-        "name": "Mumbai",
-        "country": 77
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 76,
-      "fields": {
-        "name": "Manila",
-        "country": 139
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 77,
-      "fields": {
-        "name": "Montreal",
-        "country": 33
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 78,
-      "fields": {
-        "name": "Muscat",
-        "country": 132
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 79,
-      "fields": {
-        "name": "Nairobi",
-        "country": 88
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 80,
-      "fields": {
-        "name": "Naples",
-        "country": 83
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 81,
-      "fields": {
-        "name": "Nagoya",
-        "country": 85
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 82,
-      "fields": {
-        "name": "Nice",
-        "country": 61
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 83,
-      "fields": {
-        "name": "Nouakchott",
-        "country": 112
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 84,
-      "fields": {
-        "name": "Nassau",
-        "country": 12
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 85,
-      "fields": {
-        "name": "Osaka",
-        "country": 85
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 86,
-      "fields": {
-        "name": "Oslo",
-        "country": 131
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 87,
-      "fields": {
-        "name": "Ottawa",
-        "country": 33
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 88,
-      "fields": {
-        "name": "Ouagadougou",
-        "country": 27
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 89,
-      "fields": {
-        "name": "Oran",
-        "country": 3
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 90,
-      "fields": {
-        "name": "Orlando",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 91,
-      "fields": {
-        "name": "Paris",
-        "country": 61
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 92,
-      "fields": {
-        "name": "Perth",
-        "country": 9
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 93,
-      "fields": {
-        "name": "Porto",
-        "country": 141
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 94,
-      "fields": {
-        "name": "Prague",
-        "country": 46
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 95,
-      "fields": {
-        "name": "Phnom Penh",
-        "country": 31
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 96,
-      "fields": {
-        "name": "Pretoria",
-        "country": 162
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 97,
-      "fields": {
-        "name": "Quito",
-        "country": 51
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 98,
-      "fields": {
-        "name": "Quebec City",
-        "country": 33
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 99,
-      "fields": {
-        "name": "Qingdao",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 100,
-      "fields": {
-        "name": "Quetzaltenango",
-        "country": 69
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 101,
-      "fields": {
-        "name": "Queretaro",
-        "country": 114
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 102,
-      "fields": {
-        "name": "Qom",
-        "country": 79
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 103,
-      "fields": {
-        "name": "Rome",
-        "country": 83
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 104,
-      "fields": {
-        "name": "Reykjavik",
-        "country": 76
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 105,
-      "fields": {
-        "name": "Rio de Janeiro",
-        "country": 24
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 106,
-      "fields": {
-        "name": "Riyadh",
-        "country": 152
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 107,
-      "fields": {
-        "name": "Rotterdam",
-        "country": 126
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 108,
-      "fields": {
-        "name": "Raleigh",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 109,
-      "fields": {
-        "name": "Sydney",
-        "country": 9
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 110,
-      "fields": {
-        "name": "Seoul",
-        "country": 91
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 111,
-      "fields": {
-        "name": "Shanghai",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 112,
-      "fields": {
-        "name": "Singapore",
-        "country": 157
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 113,
-      "fields": {
-        "name": "Stockholm",
-        "country": 168
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 114,
-      "fields": {
-        "name": "Sao Paulo",
-        "country": 24
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 115,
-      "fields": {
-        "name": "Tokyo",
-        "country": 85
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 116,
-      "fields": {
-        "name": "Toronto",
-        "country": 33
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 117,
-      "fields": {
-        "name": "Tehran",
-        "country": 79
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 118,
-      "fields": {
-        "name": "Turin",
-        "country": 83
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 119,
-      "fields": {
-        "name": "Toulouse",
-        "country": 61
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 120,
-      "fields": {
-        "name": "Tbilisi",
-        "country": 64
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 121,
-      "fields": {
-        "name": "Ulaanbaatar",
-        "country": 118
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 122,
-      "fields": {
-        "name": "Uppsala",
-        "country": 168
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 123,
-      "fields": {
-        "name": "Umea",
-        "country": 168
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 124,
-      "fields": {
-        "name": "Uberlandia",
-        "country": 24
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 125,
-      "fields": {
-        "name": "Utrecht",
-        "country": 126
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 126,
-      "fields": {
-        "name": "Ufa",
-        "country": 144
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 127,
-      "fields": {
-        "name": "Vienna",
-        "country": 10
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 128,
-      "fields": {
-        "name": "Vancouver",
-        "country": 33
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 129,
-      "fields": {
-        "name": "Venice",
-        "country": 83
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 130,
-      "fields": {
-        "name": "Valencia",
-        "country": 164
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 131,
-      "fields": {
-        "name": "Veracruz",
-        "country": 114
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 132,
-      "fields": {
-        "name": "Vaduz",
-        "country": 101
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 133,
-      "fields": {
-        "name": "Warsaw",
-        "country": 140
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 134,
-      "fields": {
-        "name": "Wellington",
-        "country": 127
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 135,
-      "fields": {
-        "name": "Washington, D.C.",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 136,
-      "fields": {
-        "name": "Wuhan",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 137,
-      "fields": {
-        "name": "Willemstad",
-        "country": 126
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 138,
-      "fields": {
-        "name": "Winnipeg",
-        "country": 33
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 139,
-      "fields": {
-        "name": "Xian",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 140,
-      "fields": {
-        "name": "Xiamen",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 141,
-      "fields": {
-        "name": "Xalapa",
-        "country": 114
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 142,
-      "fields": {
-        "name": "Xining",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 143,
-      "fields": {
-        "name": "Xiangyang",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 144,
-      "fields": {
-        "name": "Xuzhou",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 145,
-      "fields": {
-        "name": "Yokohama",
-        "country": 85
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 146,
-      "fields": {
-        "name": "Yaounde",
-        "country": 32
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 147,
-      "fields": {
-        "name": "Yangon",
-        "country": 122
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 148,
-      "fields": {
-        "name": "Yerevan",
-        "country": 8
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 149,
-      "fields": {
-        "name": "Yekaterinburg",
-        "country": 144
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 150,
-      "fields": {
-        "name": "Yellowknife",
-        "country": 33
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 151,
-      "fields": {
-        "name": "Lima",
-        "country": 138
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 152,
-      "fields": {
-        "name": "Seville",
-        "country": 164
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 153,
-      "fields": {
-        "name": "Santiago",
-        "country": 36
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 154,
-      "fields": {
-        "name": "Budapest",
-        "country": 75
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 155,
-      "fields": {
-        "name": "Zurich",
-        "country": 169
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 156,
-      "fields": {
-        "name": "Kuala Lumpur",
-        "country": 107
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 157,
-      "fields": {
-        "name": "Monte Carlo",
-        "country": 117
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 158,
-      "fields": {
-        "name": "Marrakesh",
-        "country": 120
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 159,
-      "fields": {
-        "name": "Monaco",
-        "country": 117
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 160,
-      "fields": {
-        "name": "Mexico City",
-        "country": 114
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 161,
-      "fields": {
-        "name": "New York City",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 162,
-      "fields": {
-        "name": "Beijing",
-        "country": 37
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 163,
-      "fields": {
-        "name": "Moscow",
-        "country": 140
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 164,
-      "fields": {
-        "name": "Guadalajara",
-        "country": 114
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 165,
-      "fields": {
-        "name": "Giza",
-        "country": 52
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 166,
-      "fields": {
-        "name": "Galway",
-        "country": 81
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 167,
-      "fields": {
-        "name": "Galapagos",
-        "country": 51
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 168,
-      "fields": {
-        "name": "Gaza",
-        "country": 197
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 169,
-      "fields": {
-        "name": "Gibraltar",
-        "country": 186
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 170,
-      "fields": {
-        "name": "Guadaquil",
-        "country": 51
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 171,
-      "fields": {
-        "name": "Ghent",
-        "country": 17
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 172,
-      "fields": {
-        "name": "Guimaraes",
-        "country": 141
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 173,
-      "fields": {
-        "name": "Gwangju",
-        "country": 91
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 174,
-      "fields": {
-        "name": "Quincy",
-        "country": 187
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 175,
-      "fields": {
-        "name": "Quezon City",
-        "country": 139
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 176,
-      "fields": {
-        "name": "Graz",
-        "country": 10
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 177,
-      "fields": {
-        "name": "Gorakhpur",
-        "country": 77
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 178,
-      "fields": {
-        "name": "Gothenburg",
-        "country": 168
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 179,
-      "fields": {
-        "name": "Bogota",
-        "country": 38
-      }
-    },
-    {
-      "model": "api.city",
-      "pk": 180,
-      "fields": {
-        "name": "San Francisco",
-        "country": 187
-      }
+  {
+    "model": "api.city",
+    "pk": 1,
+    "fields": {
+      "name": "Amsterdam",
+      "country": 126
     }
+  },
+  {
+    "model": "api.city",
+    "pk": 2,
+    "fields": {
+      "name": "Athens",
+      "country": 67
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 5,
+    "fields": {
+      "name": "Auckland",
+      "country": 127
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 7,
+    "fields": {
+      "name": "Barcelona",
+      "country": 164
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 8,
+    "fields": {
+      "name": "Berlin",
+      "country": 65
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 10,
+    "fields": {
+      "name": "Bangkok",
+      "country": 174
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 11,
+    "fields": {
+      "name": "Buenos Aires",
+      "country": 7
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 13,
+    "fields": {
+      "name": "Cairo",
+      "country": 52
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 15,
+    "fields": {
+      "name": "Cape Town",
+      "country": 162
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 16,
+    "fields": {
+      "name": "Casablanca",
+      "country": 120
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 17,
+    "fields": {
+      "name": "Chicago",
+      "country": 187
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 18,
+    "fields": {
+      "name": "Copenhagen",
+      "country": 47
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 19,
+    "fields": {
+      "name": "Dubai",
+      "country": 185
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 25,
+    "fields": {
+      "name": "Edinburgh",
+      "country": 186
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 31,
+    "fields": {
+      "name": "Florence",
+      "country": 83
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 39,
+    "fields": {
+      "name": "Gdansk",
+      "country": 140
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 40,
+    "fields": {
+      "name": "Glasgow",
+      "country": 186
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 43,
+    "fields": {
+      "name": "Helsinki",
+      "country": 60
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 48,
+    "fields": {
+      "name": "Hong Kong",
+      "country": 37
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 49,
+    "fields": {
+      "name": "Istanbul",
+      "country": 180
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 55,
+    "fields": {
+      "name": "Jakarta",
+      "country": 78
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 56,
+    "fields": {
+      "name": "Johannesburg",
+      "country": 162
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 62,
+    "fields": {
+      "name": "Kyoto",
+      "country": 85
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 67,
+    "fields": {
+      "name": "London",
+      "country": 186
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 68,
+    "fields": {
+      "name": "Lisbon",
+      "country": 141
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 70,
+    "fields": {
+      "name": "Los Angeles",
+      "country": 187
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 71,
+    "fields": {
+      "name": "Lagos",
+      "country": 130
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 73,
+    "fields": {
+      "name": "Madrid",
+      "country": 164
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 75,
+    "fields": {
+      "name": "Mumbai",
+      "country": 77
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 77,
+    "fields": {
+      "name": "Montreal",
+      "country": 33
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 79,
+    "fields": {
+      "name": "Nairobi",
+      "country": 88
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 86,
+    "fields": {
+      "name": "Oslo",
+      "country": 131
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 91,
+    "fields": {
+      "name": "Paris",
+      "country": 61
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 94,
+    "fields": {
+      "name": "Prague",
+      "country": 46
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 97,
+    "fields": {
+      "name": "Quito",
+      "country": 51
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 98,
+    "fields": {
+      "name": "Quebec City",
+      "country": 33
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 99,
+    "fields": {
+      "name": "Qingdao",
+      "country": 37
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 100,
+    "fields": {
+      "name": "Quetzaltenango",
+      "country": 69
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 103,
+    "fields": {
+      "name": "Rome",
+      "country": 83
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 104,
+    "fields": {
+      "name": "Reykjavik",
+      "country": 76
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 105,
+    "fields": {
+      "name": "Rio de Janeiro",
+      "country": 24
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 109,
+    "fields": {
+      "name": "Sydney",
+      "country": 9
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 110,
+    "fields": {
+      "name": "Seoul",
+      "country": 91
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 111,
+    "fields": {
+      "name": "Shanghai",
+      "country": 37
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 113,
+    "fields": {
+      "name": "Stockholm",
+      "country": 168
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 115,
+    "fields": {
+      "name": "Tokyo",
+      "country": 85
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 125,
+    "fields": {
+      "name": "Utrecht",
+      "country": 126
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 127,
+    "fields": {
+      "name": "Vienna",
+      "country": 10
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 128,
+    "fields": {
+      "name": "Vancouver",
+      "country": 33
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 135,
+    "fields": {
+      "name": "Washington, D.C.",
+      "country": 187
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 136,
+    "fields": {
+      "name": "Wuhan",
+      "country": 37
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 139,
+    "fields": {
+      "name": "Xian",
+      "country": 37
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 140,
+    "fields": {
+      "name": "Xiamen",
+      "country": 37
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 141,
+    "fields": {
+      "name": "Xalapa",
+      "country": 114
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 145,
+    "fields": {
+      "name": "Yokohama",
+      "country": 85
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 149,
+    "fields": {
+      "name": "Yekaterinburg",
+      "country": 144
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 151,
+    "fields": {
+      "name": "Lima",
+      "country": 138
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 152,
+    "fields": {
+      "name": "Seville",
+      "country": 164
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 153,
+    "fields": {
+      "name": "Santiago",
+      "country": 36
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 154,
+    "fields": {
+      "name": "Budapest",
+      "country": 75
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 155,
+    "fields": {
+      "name": "Zurich",
+      "country": 169
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 156,
+    "fields": {
+      "name": "Kuala Lumpur",
+      "country": 107
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 157,
+    "fields": {
+      "name": "Monte Carlo",
+      "country": 117
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 158,
+    "fields": {
+      "name": "Marrakesh",
+      "country": 120
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 159,
+    "fields": {
+      "name": "Monaco",
+      "country": 117
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 160,
+    "fields": {
+      "name": "Mexico City",
+      "country": 114
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 161,
+    "fields": {
+      "name": "New York City",
+      "country": 187
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 162,
+    "fields": {
+      "name": "Beijing",
+      "country": 37
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 163,
+    "fields": {
+      "name": "Moscow",
+      "country": 140
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 164,
+    "fields": {
+      "name": "Guadalajara",
+      "country": 114
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 166,
+    "fields": {
+      "name": "Galway",
+      "country": 81
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 167,
+    "fields": {
+      "name": "Galapagos",
+      "country": 51
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 168,
+    "fields": {
+      "name": "Gaza",
+      "country": 197
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 169,
+    "fields": {
+      "name": "Gibraltar",
+      "country": 186
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 170,
+    "fields": {
+      "name": "Guadaquil",
+      "country": 51
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 171,
+    "fields": {
+      "name": "Ghent",
+      "country": 17
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 172,
+    "fields": {
+      "name": "Guimaraes",
+      "country": 141
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 174,
+    "fields": {
+      "name": "Quincy",
+      "country": 187
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 175,
+    "fields": {
+      "name": "Quezon City",
+      "country": 139
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 176,
+    "fields": {
+      "name": "Graz",
+      "country": 10
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 177,
+    "fields": {
+      "name": "Gorakhpur",
+      "country": 77
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 178,
+    "fields": {
+      "name": "Gothenburg",
+      "country": 168
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 179,
+    "fields": {
+      "name": "Bogota",
+      "country": 38
+    }
+  },
+  {
+    "model": "api.city",
+    "pk": 180,
+    "fields": {
+      "name": "San Francisco",
+      "country": 187
+    }
+  }
 ]
