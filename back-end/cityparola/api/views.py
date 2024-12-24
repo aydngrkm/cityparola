@@ -255,22 +255,22 @@ class CheckAnswerView(APIView):
 
 # user only?
 class GetLeaderboard(APIView):
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     def get(self, request, format=None):
-        #current_user = request.user
+        current_user = request.user
         all_users = User.objects.order_by('-score')
-        #user_rank = list(all_users).index(current_user) + 1
+        user_rank = list(all_users).index(current_user) + 1
 
         leaderboard = []
         
-        for user in all_users[:50]:
+        for user in all_users[:5]:
             leaderboard.append({"username": user.username, "score": user.score})
 
         data = {
             "leaderboard": leaderboard,
-            #"current_user_rank": user_rank,
-            #"current_user_score": current_user.score,
+            "current_user_rank": user_rank,
+            "current_user_score": current_user.score,
         }
         return Response(data)
     
@@ -292,3 +292,27 @@ class GetHint(APIView):
         
         hint = random.choice(hints)
         return Response({'hint_text': hint.hint_text})
+
+class FeedbackList(APIView):
+    def get(self, request, format=None):
+        feedbacks = Feedback.objects.all()
+        serializer = FeedbackSerializer(feedbacks, many=True)
+        return Response(serializer.data)
+
+    def post(self, request, format=None):
+        serializer = FeedbackSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class FeedbackDetail(APIView):
+    def get(self, request, pk, format=None):
+        feedback = get_object_or_404(Feedback, pk=pk)
+        serializer = FeedbackSerializer(feedback)
+        return Response(serializer.data)
+
+    def delete(self, request, pk, format=None):
+        feedback = get_object_or_404(Feedback, pk=pk)
+        feedback.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

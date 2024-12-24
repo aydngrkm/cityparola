@@ -17,6 +17,8 @@ urlpatterns = [
     path('hints/<int:pk>/', views.HintDetail.as_view()),
     path('questions/', views.QuestionList.as_view()),
     path('questions/<int:pk>/', views.QuestionDetail.as_view()),
+    path('feedbacks/', views.FeedbackList.as_view()),
+    path('feedbacks/<int:pk>/', views.FeedbackDetail.as_view()),
     path('default-test/', views.DefaultTestView.as_view()),
     path('survival-test/', views.SurvivalTestView.as_view()),
     path('check-answer/', views.CheckAnswerView.as_view()),
