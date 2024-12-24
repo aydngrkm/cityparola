@@ -178,11 +178,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'api.User'
 
 # Do not forget to change this in production!
-CORS_ALLOW_ALL_ORIGINS = True  # Bu, tüm origin'lere izin verir. (Bu güvenlik açısından riskli olabilir, prod ortamında daha spesifik yapmanız önerilir.)
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_HEADERS = [
     'Origin',
     'X-Requested-With',
     'Content-Type',
     'Accept',
-    'Authorization',  # Bu satırı ekleyin
+    'Authorization',
 ]
